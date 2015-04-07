@@ -1,0 +1,195 @@
+{
+"protein1":{
+	"proteinName":"NP_993781.1",
+	"Length":"163",
+	"Score":"115",
+	"eValue":"3e-025",
+	"Identities":"100",
+	"Positives":"100",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL",
+	"QueryEnd":"54",
+	"alignment":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL
+",
+	"SubjectStart":"22",
+	"Subject":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL",
+	"SubjectEnd":"75"
+},
+"protein2":{
+	"proteinName":"YP_340947.1",
+	"Length":"171",
+	"Score":"35.9",
+	"eValue":"0.22",
+	"Identities":"42",
+	"Positives":"58",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRK",
+	"QueryEnd":"50",
+	"alignment":"SD RKAIDT+++L  +    I S L E+   Q Q FIR+    S  E++K
+",
+	"SubjectStart":"124",
+	"Subject":"SDHRKAIDTLADLDPVSEDMITSQLAEL--EQFQWFIRAHLESSTGELQK",
+	"SubjectEnd":"171"
+},
+"protein3":{
+	"proteinName":"NP_462685.1",
+	"Length":"150",
+	"Score":"34",
+	"eValue":"0.85",
+	"Identities":"34",
+	"Positives":"51",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA",
+	"QueryEnd":"52",
+	"alignment":"SDTR+AI  +S  L I  + IESM+ +MG      F++         ++ AA
+",
+	"SubjectStart":"22",
+	"Subject":"SDTRRAIRRLSERLNIDVVPIESMIDQMGKTAGGEFLQYLHRPDESHLQNAA",
+	"SubjectEnd":"73"
+},
+"protein4":{
+	"proteinName":"NP_709531.1",
+	"Length":"159",
+	"Score":"32.4",
+	"eValue":"2.5",
+	"Identities":"32",
+	"Positives":"50",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA",
+	"QueryEnd":"52",
+	"alignment":"S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+",
+	"SubjectStart":"31",
+	"Subject":"SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA",
+	"SubjectEnd":"82"
+},
+"protein5":{
+	"proteinName":"YP_312402.1",
+	"Length":"159",
+	"Score":"32.4",
+	"eValue":"2.5",
+	"Identities":"32",
+	"Positives":"50",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA",
+	"QueryEnd":"52",
+	"alignment":"S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+",
+	"SubjectStart":"31",
+	"Subject":"SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA",
+	"SubjectEnd":"82"
+},
+"protein6":{
+	"proteinName":"AP_004129.1",
+	"Length":"150",
+	"Score":"32.4",
+	"eValue":"2.5",
+	"Identities":"32",
+	"Positives":"50",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA",
+	"QueryEnd":"52",
+	"alignment":"S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+",
+	"SubjectStart":"22",
+	"Subject":"SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA",
+	"SubjectEnd":"73"
+},
+"protein7":{
+	"proteinName":"NP_993781.1",
+	"Length":"163",
+	"Score":"115",
+	"eValue":"3e-025",
+	"Identities":"100",
+	"Positives":"100",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL",
+	"QueryEnd":"54",
+	"alignment":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL
+",
+	"SubjectStart":"22",
+	"Subject":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL",
+	"SubjectEnd":"75"
+},
+"protein8":{
+	"proteinName":"YP_340947.1",
+	"Length":"171",
+	"Score":"35.9",
+	"eValue":"0.22",
+	"Identities":"42",
+	"Positives":"58",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRK",
+	"QueryEnd":"50",
+	"alignment":"SD RKAIDT+++L  +    I S L E+   Q Q FIR+    S  E++K
+",
+	"SubjectStart":"124",
+	"Subject":"SDHRKAIDTLADLDPVSEDMITSQLAEL--EQFQWFIRAHLESSTGELQK",
+	"SubjectEnd":"171"
+},
+"protein9":{
+	"proteinName":"NP_462685.1",
+	"Length":"150",
+	"Score":"34",
+	"eValue":"0.85",
+	"Identities":"34",
+	"Positives":"51",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA",
+	"QueryEnd":"52",
+	"alignment":"SDTR+AI  +S  L I  + IESM+ +MG      F++         ++ AA
+",
+	"SubjectStart":"22",
+	"Subject":"SDTRRAIRRLSERLNIDVVPIESMIDQMGKTAGGEFLQYLHRPDESHLQNAA",
+	"SubjectEnd":"73"
+},
+"protein10":{
+	"proteinName":"NP_709531.1",
+	"Length":"159",
+	"Score":"32.4",
+	"eValue":"2.5",
+	"Identities":"32",
+	"Positives":"50",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA",
+	"QueryEnd":"52",
+	"alignment":"S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+",
+	"SubjectStart":"31",
+	"Subject":"SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA",
+	"SubjectEnd":"82"
+},
+"protein11":{
+	"proteinName":"YP_312402.1",
+	"Length":"159",
+	"Score":"32.4",
+	"eValue":"2.5",
+	"Identities":"32",
+	"Positives":"50",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA",
+	"QueryEnd":"52",
+	"alignment":"S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+",
+	"SubjectStart":"31",
+	"Subject":"SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA",
+	"SubjectEnd":"82"
+},
+"protein12":{
+	"proteinName":"AP_004129.1",
+	"Length":"150",
+	"Score":"32.4",
+	"eValue":"2.5",
+	"Identities":"32",
+	"Positives":"50",
+	"QueryStart":"1",
+	"Query":"SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA",
+	"QueryEnd":"52",
+	"alignment":"S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+",
+	"SubjectStart":"22",
+	"Subject":"SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA",
+	"SubjectEnd":"73"
+},
+"finish":"end"
+}

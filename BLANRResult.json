@@ -1,0 +1,259 @@
+{
+"protein1":{
+	"proteinName":"2QNA_A",
+	"Length":"762",
+	"Score":"26.9",
+	"eValue":"2.4",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"105",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"133"
+},
+"protein2":{
+	"proteinName":"1QGK_A",
+	"Length":"876",
+	"Score":"26.9",
+	"eValue":"2.6",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein3":{
+	"proteinName":"2Q5D_A",
+	"Length":"876",
+	"Score":"26.9",
+	"eValue":"2.7",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein4":{
+	"proteinName":"1UKL_A",
+	"Length":"876",
+	"Score":"26.9",
+	"eValue":"2.7",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein5":{
+	"proteinName":"1M5N_S",
+	"Length":"485",
+	"Score":"26.9",
+	"eValue":"2.8",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein6":{
+	"proteinName":"1IBR_B",
+	"Length":"462",
+	"Score":"26.9",
+	"eValue":"2.9",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein7":{
+	"proteinName":"1F59_A",
+	"Length":"442",
+	"Score":"26.6",
+	"eValue":"3",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein8":{
+	"proteinName":"1GCJ_A",
+	"Length":"460",
+	"Score":"26.6",
+	"eValue":"3.3",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"236",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"264"
+},
+"protein9":{
+	"proteinName":"1GCJ_A",
+	"Length":"460",
+	"Score":"28.6",
+	"eValue":"0.88",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"236",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"264"
+},
+"protein10":{
+	"proteinName":"2Q5D_A",
+	"Length":"876",
+	"Score":"28.6",
+	"eValue":"0.88",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein11":{
+	"proteinName":"1QGK_A",
+	"Length":"876",
+	"Score":"28.6",
+	"eValue":"0.88",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein12":{
+	"proteinName":"1F59_A",
+	"Length":"442",
+	"Score":"28.6",
+	"eValue":"0.88",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein13":{
+	"proteinName":"1M5N_S",
+	"Length":"485",
+	"Score":"28.6",
+	"eValue":"0.88",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein14":{
+	"proteinName":"1UKL_A",
+	"Length":"876",
+	"Score":"28.6",
+	"eValue":"0.88",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein15":{
+	"proteinName":"1IBR_B",
+	"Length":"462",
+	"Score":"28.6",
+	"eValue":"0.88",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"230",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"258"
+},
+"protein16":{
+	"proteinName":"2QNA_A",
+	"Length":"762",
+	"Score":"28.6",
+	"eValue":"0.88",
+	"Identities":"41",
+	"Positives":"58",
+	"QueryStart":"2",
+	"Query":"DTRKAIDTISNLLKIKPIYIESMLQEMGP",
+	"QueryEnd":"30",
+	"alignment":"DTR  +  + NL+KI  +Y + M   MGP
+",
+	"SubjectStart":"105",
+	"Subject":"DTRVRVAALQNLVKIMSLYYQYMETYMGP",
+	"SubjectEnd":"133"
+},
+"finish":"end"
+}
