@@ -1,0 +1,161 @@
+Query         query
+Match_columns 54
+No_of_seqs    1 out of 1
+Neff          1.0 
+Searched_HMMs 935
+Date          Sun Apr  5 21:36:43 2015
+Command       /home/lihongb/Tools/hhsearch64/bin/hhsearch -d /home/lihongb/DATABASE/HMMDB/cal.hhm -i /home/cf797/test/testAlignment//T0837/query.hhm -o /home/cf797/test/testAlignment//T0837/query.hhrNR -cal 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 d1mgpa_ c.119.1.1 (A:) Hypothe  31.8    0.46 0.00049   27.0   0.0   16    5-20    179-194 (285)
+  2 d1aco_2 c.83.1.1 (2-528) Aconi  16.9     1.4  0.0015   24.4   0.0   21   32-52    349-369 (527)
+  3 d1r75a_ b.134.1.1 (A:) Unnamed  11.4     2.5  0.0026   23.1   0.0   17   28-44     88-104 (121)
+  4 d1a9xa1 a.92.1.1 (A:403-555) C   7.9     4.1  0.0044   21.9   0.0   19    6-24     46-64  (153)
+  5 d1otsa_ f.20.1.1 (A:) Clc chlo   5.3     6.9  0.0074   20.7   0.0   12   10-21    419-430 (444)
+  6 d1a3aa_ d.112.1.1 (A:) Phospho   3.0      14   0.015   19.0   0.0   23    4-26     19-45  (145)
+  7 d1e3oc2 a.35.1.1 (C:1-75) Oct-   2.6      16   0.017   18.7   0.0   11   10-20     57-67  (75)
+  8 d1h5wa_ e.27.1.1 (A:) Upper co   2.6      17   0.018   18.6   0.0   15   15-29     31-45  (268)
+  9 d1amua_ e.23.1.1 (A:) Phenylal   2.4      18    0.02   18.4   0.0   15   14-28    422-436 (514)
+ 10 d1jcha2 b.110.1.1 (A:84-315) C   2.3      19   0.021   18.3   0.0   18    4-21    185-202 (232)
+
+No 1  
+>d1mgpa_ c.119.1.1 (A:) Hypothetical protein TM841 {Thermotoga maritima}
+Probab=31.78  E-value=0.46  Score=26.96  Aligned_cols=16  Identities=38%  Similarity=0.401  Sum_probs=7.2
+
+Q ref|NP_993781.    5 KAIDTISNLLKIKPIY   20 (54)
+Q Consensus         5 kaidtisnllkikpiy   20 (54)
+                      ++.-.|.++|+||||-
+T Consensus       179 ~~~a~ig~lL~ikPIl  194 (285)
+T d1mgpa_         179 KFQGFVGNLLKIRVCL  194 (285)
+T ss_dssp             --------CTTEEEEE
+T ss_pred             HHHHHHHHHhcceEEE
+Confidence            4555788999999984
+
+
+No 2  
+>d1aco_2 c.83.1.1 (2-528) Aconitase A, N-terminal domain {Cow (Bos taurus)}
+Probab=16.90  E-value=1.4  Score=24.42  Aligned_cols=21  Identities=29%  Similarity=0.294  Sum_probs=18.4
+
+Q ref|NP_993781.   32 QTQMFIRSTSNGSAEEVRKAA   52 (54)
+Q Consensus        32 qtqmfirstsngsaeevrkaa   52 (54)
+                      ..|.||-|-.||+-|.++.||
+T Consensus       349 Id~afIGSCTN~r~eDl~~AA  369 (527)
+T d1aco_2         349 IRVGLIGSCTNSSYEDMGRSA  369 (527)
+T ss_dssp             EEEEEECSTTSCSHHHHHHHH
+T ss_pred             eeeEEEEeccccchhHHHHHH
+Confidence            457899999999999998876
+
+
+No 3  
+>d1r75a_ b.134.1.1 (A:) Unnamed hypothetical protein {Leishmania major}
+Probab=11.39  E-value=2.5  Score=23.08  Aligned_cols=17  Identities=35%  Similarity=0.636  Sum_probs=14.0
+
+Q ref|NP_993781.   28 MGPRQTQMFIRSTSNGS   44 (54)
+Q Consensus        28 mgprqtqmfirstsngs   44 (54)
+                      .-|..|+|||...-||=
+T Consensus        88 VyP~eTe~FIeG~VnGf  104 (121)
+T d1r75a_          88 VRPLETQMFVEGSVTGW  104 (121)
+T ss_dssp             ECTTCEEEEEEEECCSE
+T ss_pred             eCCCCcceeeeccccee
+Confidence            34889999999888873
+
+
+No 4  
+>d1a9xa1 a.92.1.1 (A:403-555) Carbamoyl phosphate synthetase, large subunit connection domain {Escherichia coli}
+Probab=7.91  E-value=4.1  Score=21.92  Aligned_cols=19  Identities=21%  Similarity=0.455  Sum_probs=15.9
+
+Q ref|NP_993781.    6 AIDTISNLLKIKPIYIESM   24 (54)
+Q Consensus         6 aidtisnllkikpiyiesm   24 (54)
+                      .++.|+++-+|.|.|++.|
+T Consensus        46 sieei~~lT~ID~wFL~ki   64 (153)
+T d1a9xa1          46 SVDGVFNLTNIDRWFLVQI   64 (153)
+T ss_dssp             CHHHHHHHHCCCHHHHHHH
+T ss_pred             CHHHHHHHHCCCHHHHHHH
+Confidence            3678999999999997765
+
+
+No 5  
+>d1otsa_ f.20.1.1 (A:) Clc chloride channel {Escherichia coli}
+Probab=5.28  E-value=6.9  Score=20.71  Aligned_cols=12  Identities=25%  Similarity=0.537  Sum_probs=9.6
+
+Q ref|NP_993781.   10 ISNLLKIKPIYI   21 (54)
+Q Consensus        10 isnllkikpiyi   21 (54)
+                      +++++.-||||-
+T Consensus       419 v~~~~~~~~iy~  430 (444)
+T d1otsa_         419 LAQFTGGKPLYS  430 (444)
+T ss_dssp             HHHTTTCCCHHH
+T ss_pred             HHHhhcCCChHH
+Confidence            577888899984
+
+
+No 6  
+>d1a3aa_ d.112.1.1 (A:) Phosphotransferase IIa-mannitol {Escherichia coli}
+Probab=2.95  E-value=14  Score=19.03  Aligned_cols=23  Identities=30%  Similarity=0.563  Sum_probs=16.1
+
+Q ref|NP_993781.    4 RKAIDTISNLLK----IKPIYIESMLQ   26 (54)
+Q Consensus         4 rkaidtisnllk----ikpiyiesmlq   26 (54)
+                      ..||+.+.++|.    ++|-|+++|++
+T Consensus        19 ~e~i~~~~~~L~~~g~v~~~~~~~i~~   45 (145)
+T d1a3aa_          19 EEAIRFAGEQLVKGGYVEPEYVQAMLD   45 (145)
+T ss_dssp             HHHHHHHHHHHHHTTSBCTHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHcCCCChHHHHHHHH
+Confidence            456666666654    67889988876
+
+
+No 7  
+>d1e3oc2 a.35.1.1 (C:1-75) Oct-1 {Human (Homo sapiens)}
+Probab=2.64  E-value=16  Score=18.71  Aligned_cols=11  Identities=36%  Similarity=0.763  Sum_probs=9.0
+
+Q ref|NP_993781.   10 ISNLLKIKPIY   20 (54)
+Q Consensus        10 isnllkikpiy   20 (54)
+                      ..|..|+||+.
+T Consensus        57 ~knm~KLkPll   67 (75)
+T d1e3oc2          57 FKNMSKLKPLL   67 (75)
+T ss_dssp             HHHHHHHHHHH
+T ss_pred             HhHHHHHHHHH
+Confidence            46899999984
+
+
+No 8  
+>d1h5wa_ e.27.1.1 (A:) Upper collar protein gp10 (connector protein) {Bacteriophage PHI29}
+Probab=2.55  E-value=17  Score=18.61  Aligned_cols=15  Identities=27%  Similarity=0.773  Sum_probs=11.6
+
+Q ref|NP_993781.   15 KIKPIYIESMLQEMG   29 (54)
+Q Consensus        15 kikpiyiesmlqemg   29 (54)
+                      .|.|+|+|.-|-+.|
+T Consensus        31 ~idp~flEK~lhq~G   45 (268)
+T d1h5wa_          31 TINPSFLEKSIHQFG   45 (268)
+T ss_dssp             TCCHHHHHHHHHHHS
+T ss_pred             ccchHHHHHhHhhcc
+Confidence            367899998887766
+
+
+No 9  
+>d1amua_ e.23.1.1 (A:) Phenylalanine activating domain of gramicidin synthetase 1 {Bacillus brevis}
+Probab=2.39  E-value=18  Score=18.44  Aligned_cols=15  Identities=20%  Similarity=0.248  Sum_probs=11.9
+
+Q ref|NP_993781.   14 LKIKPIYIESMLQEM   28 (54)
+Q Consensus        14 lkikpiyiesmlqem   28 (54)
+                      -++-|..||++|..+
+T Consensus       422 ~~v~p~eIE~~L~~~  436 (514)
+T d1amua_         422 HRVELEEVESILLKH  436 (514)
+T ss_dssp             EEEEHHHHHHHHTTS
+T ss_pred             eEecHHHHHHHHHhC
+Confidence            467899999998664
+
+
+No 10 
+>d1jcha2 b.110.1.1 (A:84-315) Colicin E3 N-terminal domain {Escherichia coli}
+Probab=2.27  E-value=19  Score=18.29  Aligned_cols=18  Identities=17%  Similarity=0.272  Sum_probs=10.1
+
+Q ref|NP_993781.    4 RKAIDTISNLLKIKPIYI   21 (54)
+Q Consensus         4 rkaidtisnllkikpiyi   21 (54)
+                      |.+|=..-.=-.+||+|+
+T Consensus       185 ~D~Ii~FP~~SGlkPvYV  202 (232)
+T d1jcha2         185 RDAVIRFPKDSGHNAVYV  202 (232)
+T ss_dssp             CEECCCCCSSSSCCCEEE
+T ss_pred             ceEEEEecCCCCCCcEEE
+Confidence            333333333346899998
+
+
+Done!

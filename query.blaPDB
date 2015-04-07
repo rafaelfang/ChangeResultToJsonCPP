@@ -1,0 +1,697 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= T0837
+         (54 letters)
+
+Database: nr 
+           1,533,622 sequences; 499,999,657 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+ref|NP_993781.1| hypothetical protein YP_2458 [Yersinia pestis b...   115   3e-25
+ref|YP_340947.1| stress response DNA-binding protein Dps [Pseudo...    36   0.22 
+ref|NP_462685.1| putative inner membrane protein [Salmonella typ...    34   0.85 
+ref|NP_709531.1| hypothetical protein SF3798 [Shigella flexneri ...    32   2.5  
+ref|YP_312402.1| hypothetical protein SSON_3616 [Shigella sonnei...    32   2.5  
+ref|AP_004129.1| hypothetical protein [Escherichia coli str. K-1...    32   2.5  
+
+>ref|NP_993781.1| hypothetical protein YP_2458 [Yersinia pestis biovar Microtus
+          str. 91001]
+ gb|AAS62658.1| putative membrane protein [Yersinia pestis biovar Microtus str.
+          91001]
+          Length = 163
+
+ Score =  115 bits (287), Expect = 3e-25,   Method: Composition-based stats.
+ Identities = 54/54 (100%), Positives = 54/54 (100%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 54
+          SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL
+Sbjct: 22 SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 75
+
+
+>ref|YP_340947.1| stress response DNA-binding protein Dps [Pseudoalteromonas
+           haloplanktis TAC125]
+ emb|CAI87505.1| stress response DNA-binding protein Dps [Pseudoalteromonas
+           haloplanktis TAC125]
+          Length = 171
+
+ Score = 35.9 bits (81), Expect = 0.22,   Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 29/50 (58%), Gaps = 2/50 (4%)
+
+Query: 1   SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRK 50
+           SD RKAIDT+++L  +    I S L E+   Q Q FIR+    S  E++K
+Sbjct: 124 SDHRKAIDTLADLDPVSEDMITSQLAEL--EQFQWFIRAHLESSTGELQK 171
+
+
+>ref|NP_462685.1| putative inner membrane protein [Salmonella typhimurium LT2]
+ ref|YP_152745.1| hypothetical protein SPA3636 [Salmonella enterica subsp. enterica
+          serovar Paratyphi A str. ATCC 9150]
+ ref|YP_001590850.1| hypothetical protein SPAB_04706 [Salmonella enterica subsp.
+          enterica serovar Paratyphi B str. SPB7]
+ ref|ZP_02342701.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Saintpaul str. SARA29]
+ ref|ZP_02573460.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar 4,[5],12:i:- str. CVM23701]
+ ref|ZP_02658383.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Kentucky str. CDC 191]
+ ref|ZP_02660468.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Schwarzengrund str. SL480]
+ ref|ZP_02666919.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Heidelberg str. SL486]
+ ref|ZP_02682421.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Hadar str. RI_05P066]
+ ref|ZP_02698793.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Newport str. SL317]
+ ref|YP_002043033.1| hypothetical protein SNSL254_A4067 [Salmonella enterica subsp.
+          enterica serovar Newport str. SL254]
+ ref|YP_002047817.1| hypothetical protein SeHA_C4117 [Salmonella enterica subsp.
+          enterica serovar Heidelberg str. SL476]
+ ref|ZP_03078561.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Kentucky str. CVM29188]
+ ref|YP_002116729.1| hypothetical protein SeSA_A3996 [Salmonella enterica subsp.
+          enterica serovar Schwarzengrund str. CVM19633]
+ ref|YP_002148722.1| hypothetical protein SeAg_B4012 [Salmonella enterica subsp.
+          enterica serovar Agona str. SL483]
+ ref|ZP_03164075.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Saintpaul str. SARA23]
+ ref|YP_002144234.1| hypothetical protein SSPA3397 [Salmonella enterica subsp.
+          enterica serovar Paratyphi A str. AKU_12601]
+ ref|YP_002217734.1| hypothetical protein SeD_A4175 [Salmonella enterica subsp.
+          enterica serovar Dublin str. CT_02021853]
+ ref|ZP_03214201.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Virchow str. SL491]
+ ref|ZP_03220026.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Javiana str. GA_MM04042433]
+ ref|YP_002228427.1| hypothetical protein SG3649 [Salmonella enterica subsp. enterica
+          serovar Gallinarum str. 287/91]
+ ref|YP_002245662.1| hypothetical protein SEN3601 [Salmonella enterica subsp. enterica
+          serovar Enteritidis str. P125109]
+ ref|ZP_03347421.1| hypothetical protein Salmoneentericaenterica_17584 [Salmonella
+          enterica subsp. enterica serovar Typhi str. E00-7866]
+ ref|ZP_03356581.1| hypothetical protein Salmonentericaenterica_39611 [Salmonella
+          enterica subsp. enterica serovar Typhi str. E01-6750]
+ ref|ZP_03363874.1| hypothetical protein SentesTyph_12959 [Salmonella enterica subsp.
+          enterica serovar Typhi str. E98-0664]
+ ref|ZP_03377829.1| hypothetical protein SentesTy_11112 [Salmonella enterica subsp.
+          enterica serovar Typhi str. J185]
+ ref|ZP_03382157.1| hypothetical protein SentesT_06969 [Salmonella enterica subsp.
+          enterica serovar Typhi str. M223]
+ ref|ZP_04654007.1| hypothetical protein SentesTe_03414 [Salmonella enterica subsp.
+          enterica serovar Tennessee str. CDC07-0191]
+ ref|ZP_06545551.1| hypothetical protein Salmonellentericaenterica_13935 [Salmonella
+          enterica subsp. enterica serovar Typhi str. E98-3139]
+ gb|AAL22644.1| putative inner membrane protein [Salmonella enterica subsp.
+          enterica serovar Typhimurium str. LT2]
+ gb|AAV79433.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Paratyphi A str. ATCC 9150]
+ gb|ABX70017.1| hypothetical protein SPAB_04706 [Salmonella enterica subsp.
+          enterica serovar Paratyphi B str. SPB7]
+ gb|ACF61719.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Newport str. SL254]
+ gb|ACF67424.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Heidelberg str. SL476]
+ gb|EDX47780.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Kentucky str. CVM29188]
+ gb|ACF89736.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Schwarzengrund str. CVM19633]
+ gb|EDX50589.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Newport str. SL317]
+ emb|CAR61666.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Paratyphi A str. AKU_12601]
+ gb|ACH50814.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Agona str. SL483]
+ gb|EDY24876.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Saintpaul str. SARA23]
+ gb|EDY30811.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Schwarzengrund str. SL480]
+ gb|ACH77164.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Dublin str. CT_02021853]
+ gb|EDZ03232.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Virchow str. SL491]
+ gb|EDZ07458.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Javiana str. GA_MM04042433]
+ emb|CAR39434.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Gallinarum str. 287/91]
+ gb|EDZ13714.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Saintpaul str. SARA29]
+ gb|EDZ16146.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar 4,[5],12:i:- str. CVM23701]
+ gb|EDZ19323.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Kentucky str. CDC 191]
+ gb|EDZ25781.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Heidelberg str. SL486]
+ gb|EDZ36814.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Hadar str. RI_05P066]
+ emb|CAR35178.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Enteritidis str. P125109]
+ emb|CBG26787.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Typhimurium str. D23580]
+ gb|ACY90947.1| putative inner membrane protein [Salmonella enterica subsp.
+          enterica serovar Typhimurium str. 14028S]
+          Length = 150
+
+ Score = 34.0 bits (76), Expect = 0.85,   Method: Composition-based stats.
+ Identities = 18/52 (34%), Positives = 27/52 (51%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          SDTR+AI  +S  L I  + IESM+ +MG      F++         ++ AA
+Sbjct: 22 SDTRRAIRRLSERLNIDVVPIESMIDQMGKTAGGEFLQYLHRPDESHLQNAA 73
+
+
+>ref|NP_709531.1| hypothetical protein SF3798 [Shigella flexneri 2a str. 301]
+ ref|NP_839147.1| hypothetical protein S3970 [Shigella flexneri 2a str. 2457T]
+ gb|AAN45238.1| orf, conserved hypothetical protein [Shigella flexneri 2a str.
+          301]
+ gb|AAP18958.1| hypothetical protein S3970 [Shigella flexneri 2a str. 2457T]
+ gb|ADA76090.1| hypothetical protein SFxv_4130 [Shigella flexneri 2002017]
+          Length = 159
+
+ Score = 32.4 bits (72), Expect = 2.5,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 31 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 82
+
+
+>ref|YP_312402.1| hypothetical protein SSON_3616 [Shigella sonnei Ss046]
+ gb|AAZ90167.1| conserved hypothetical protein [Shigella sonnei Ss046]
+          Length = 159
+
+ Score = 32.4 bits (72), Expect = 2.5,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 31 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 82
+
+
+>ref|AP_004129.1| hypothetical protein [Escherichia coli str. K-12 substr. W3110]
+ ref|NP_418119.2| conserved protein [Escherichia coli str. K-12 substr. MG1655]
+ ref|YP_001465147.1| hypothetical protein EcE24377A_4171 [Escherichia coli E24377A]
+ ref|YP_001460463.1| hypothetical protein EcHS_A3876 [Escherichia coli HS]
+ ref|ZP_02773645.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4113]
+ ref|ZP_02778557.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4401]
+ ref|ZP_02784854.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4501]
+ ref|ZP_02791154.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4486]
+ ref|ZP_02797311.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4196]
+ ref|ZP_02804889.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4076]
+ ref|ZP_02810622.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC869]
+ ref|ZP_02823703.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC508]
+ ref|YP_001723050.1| hypothetical protein EcolC_0036 [Escherichia coli ATCC 8739]
+ ref|YP_001732490.1| hypothetical protein ECDH10B_3846 [Escherichia coli str. K-12
+          substr. DH10B]
+ ref|YP_001882492.1| hypothetical protein SbBS512_E4256 [Shigella boydii CDC 3083-94]
+ ref|ZP_02999689.1| conserved hypothetical protein [Escherichia coli 53638]
+ ref|ZP_03027690.1| conserved hypothetical protein [Escherichia coli B7A]
+ ref|ZP_03044941.1| conserved hypothetical protein [Escherichia coli E22]
+ ref|ZP_03060655.1| conserved hypothetical protein [Escherichia coli B171]
+ ref|ZP_03081665.1| hypothetical protein EscherichcoliO157_07423 [Escherichia coli
+          O157:H7 str. EC4024]
+ ref|ZP_03248425.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4206]
+ ref|ZP_03253323.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4045]
+ ref|ZP_03259046.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4042]
+ ref|YP_002273195.1| hypothetical protein ECH74115_5092 [Escherichia coli O157:H7 str.
+          EC4115]
+ ref|YP_002295222.1| hypothetical protein ECSE_3947 [Escherichia coli SE11]
+ ref|YP_002331440.1| hypothetical protein E2348C_3978 [Escherichia coli O127:H6 str.
+          E2348/69]
+ ref|ZP_03442683.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          TW14588]
+ ref|YP_002393657.1| hypothetical protein ECS88_4088 [Escherichia coli S88]
+ ref|YP_002400167.1| hypothetical protein ECED1_4358 [Escherichia coli ED1a]
+ ref|YP_002405052.1| hypothetical protein EC55989_4131 [Escherichia coli 55989]
+ ref|YP_002414824.1| hypothetical protein ECUMN_4190 [Escherichia coli UMN026]
+ ref|YP_002928550.1| hypothetical protein BWG_3354 [Escherichia coli BW2952]
+ ref|YP_003080509.1| hypothetical protein ECSP_4712 [Escherichia coli O157:H7 str.
+          TW14359]
+ ref|ZP_05435184.1| hypothetical protein ShiD9_20530 [Shigella sp. D9]
+ ref|ZP_05439470.1| hypothetical protein E4_19702 [Escherichia sp. 4_1_40B]
+ ref|YP_003224329.1| hypothetical protein ECO103_4494 [Escherichia coli O103:H2 str.
+          12009]
+ ref|YP_003231816.1| hypothetical protein ECO26_4920 [Escherichia coli O26:H11 str.
+          11368]
+ ref|YP_003236796.1| hypothetical protein ECO111_4486 [Escherichia coli O111:H- str.
+          11128]
+ ref|ZP_05940099.1| hypothetical protein EscherichiacoliO157_14613 [Escherichia coli
+          O157:H7 str. FRIK2000]
+ ref|ZP_05951396.1| hypothetical protein EscherichiacoliO157EcO_24102 [Escherichia
+          coli O157:H7 str. FRIK966]
+ sp|P0ADL3|YICN_ECOLI RecName: Full=Uncharacterized protein yicN
+ sp|P0ADL4|YICN_ECOL6 RecName: Full=Uncharacterized protein yicN
+ sp|P0ADL5|YICN_ECO57 RecName: Full=Uncharacterized protein yicN
+ dbj|BAE77630.1| conserved hypothetical protein [Escherichia coli str. K12 substr.
+          W3110]
+ gb|AAC76686.2| conserved protein [Escherichia coli str. K-12 substr. MG1655]
+ gb|ABV08080.1| conserved hypothetical protein [Escherichia coli HS]
+ gb|ABV18883.1| conserved hypothetical protein [Escherichia coli E24377A]
+ gb|ACA75723.1| protein of unknown function DUF1198 [Escherichia coli ATCC 8739]
+ gb|ACB04712.1| conserved protein [Escherichia coli str. K-12 substr. DH10B]
+ gb|ACD09730.1| conserved hypothetical protein [Shigella boydii CDC 3083-94]
+ gb|EDU35299.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4196]
+ gb|EDU55106.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4113]
+ gb|EDU62721.1| conserved hypothetical protein [Escherichia coli 53638]
+ gb|EDU71263.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4076]
+ gb|EDU77623.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4401]
+ gb|EDU82864.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4486]
+ gb|EDU87990.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4501]
+ gb|EDU92837.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC869]
+ gb|EDU97219.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC508]
+ gb|EDV63887.1| conserved hypothetical protein [Escherichia coli B7A]
+ gb|EDV83176.1| conserved hypothetical protein [Escherichia coli E22]
+ gb|EDX30147.1| conserved hypothetical protein [Escherichia coli B171]
+ gb|EDZ75490.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4206]
+ gb|EDZ81958.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4045]
+ gb|EDZ86531.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4042]
+ gb|ACI36249.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4115]
+ dbj|BAG79471.1| conserved hypothetical protein [Escherichia coli SE11]
+ emb|CAS11526.1| predicted protein [Escherichia coli O127:H6 str. E2348/69]
+ gb|EEC31244.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          TW14588]
+ emb|CAV00687.1| conserved hypothetical protein [Escherichia coli 55989]
+ emb|CAR05295.1| conserved hypothetical protein [Escherichia coli S88]
+ emb|CAR10484.2| conserved hypothetical protein [Escherichia coli ED1a]
+ emb|CAR15330.1| conserved hypothetical protein [Escherichia coli UMN026]
+ gb|ACR62397.1| conserved protein [Escherichia coli BW2952]
+ gb|ACT74433.1| conserved protein [Escherichia coli O157:H7 str. TW14359]
+ dbj|BAI28076.1| conserved predicted protein [Escherichia coli O26:H11 str. 11368]
+ dbj|BAI33195.1| conserved predicted protein [Escherichia coli O103:H2 str. 12009]
+ dbj|BAI38245.1| conserved predicted protein [Escherichia coli O111:H- str. 11128]
+ gb|ACX37738.1| protein of unknown function DUF1198 [Escherichia coli DH1]
+ dbj|BAI57050.1| conserved hypothetical protein [Escherichia coli SE15]
+ gb|EFE61056.1| yicN protein [Escherichia coli B088]
+ gb|EFF04158.1| yicN protein [Escherichia coli B185]
+ gb|EFF10742.1| conserved hypothetical protein [Escherichia coli B354]
+          Length = 150
+
+ Score = 32.4 bits (72), Expect = 2.5,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 22 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 73
+
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+ref|NP_993781.1| hypothetical protein YP_2458 [Yersinia pestis b...   115   3e-25
+
+Sequences not found previously or not previously below threshold:
+
+ref|YP_340947.1| stress response DNA-binding protein Dps [Pseudo...    36   0.22 
+ref|NP_462685.1| putative inner membrane protein [Salmonella typ...    34   0.85 
+ref|NP_709531.1| hypothetical protein SF3798 [Shigella flexneri ...    32   2.5  
+ref|YP_312402.1| hypothetical protein SSON_3616 [Shigella sonnei...    32   2.5  
+ref|AP_004129.1| hypothetical protein [Escherichia coli str. K-1...    32   2.5  
+
+
+CONVERGED!
+>ref|NP_993781.1| hypothetical protein YP_2458 [Yersinia pestis biovar Microtus
+          str. 91001]
+ gb|AAS62658.1| putative membrane protein [Yersinia pestis biovar Microtus str.
+          91001]
+          Length = 163
+
+ Score =  115 bits (287), Expect = 3e-25,   Method: Composition-based stats.
+ Identities = 54/54 (100%), Positives = 54/54 (100%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 54
+          SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL
+Sbjct: 22 SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 75
+
+
+>ref|YP_340947.1| stress response DNA-binding protein Dps [Pseudoalteromonas
+           haloplanktis TAC125]
+ emb|CAI87505.1| stress response DNA-binding protein Dps [Pseudoalteromonas
+           haloplanktis TAC125]
+          Length = 171
+
+ Score = 35.9 bits (81), Expect = 0.22,   Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 29/50 (58%), Gaps = 2/50 (4%)
+
+Query: 1   SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRK 50
+           SD RKAIDT+++L  +    I S L E+   Q Q FIR+    S  E++K
+Sbjct: 124 SDHRKAIDTLADLDPVSEDMITSQLAEL--EQFQWFIRAHLESSTGELQK 171
+
+
+>ref|NP_462685.1| putative inner membrane protein [Salmonella typhimurium LT2]
+ ref|YP_152745.1| hypothetical protein SPA3636 [Salmonella enterica subsp. enterica
+          serovar Paratyphi A str. ATCC 9150]
+ ref|YP_001590850.1| hypothetical protein SPAB_04706 [Salmonella enterica subsp.
+          enterica serovar Paratyphi B str. SPB7]
+ ref|ZP_02342701.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Saintpaul str. SARA29]
+ ref|ZP_02573460.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar 4,[5],12:i:- str. CVM23701]
+ ref|ZP_02658383.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Kentucky str. CDC 191]
+ ref|ZP_02660468.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Schwarzengrund str. SL480]
+ ref|ZP_02666919.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Heidelberg str. SL486]
+ ref|ZP_02682421.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Hadar str. RI_05P066]
+ ref|ZP_02698793.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Newport str. SL317]
+ ref|YP_002043033.1| hypothetical protein SNSL254_A4067 [Salmonella enterica subsp.
+          enterica serovar Newport str. SL254]
+ ref|YP_002047817.1| hypothetical protein SeHA_C4117 [Salmonella enterica subsp.
+          enterica serovar Heidelberg str. SL476]
+ ref|ZP_03078561.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Kentucky str. CVM29188]
+ ref|YP_002116729.1| hypothetical protein SeSA_A3996 [Salmonella enterica subsp.
+          enterica serovar Schwarzengrund str. CVM19633]
+ ref|YP_002148722.1| hypothetical protein SeAg_B4012 [Salmonella enterica subsp.
+          enterica serovar Agona str. SL483]
+ ref|ZP_03164075.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Saintpaul str. SARA23]
+ ref|YP_002144234.1| hypothetical protein SSPA3397 [Salmonella enterica subsp.
+          enterica serovar Paratyphi A str. AKU_12601]
+ ref|YP_002217734.1| hypothetical protein SeD_A4175 [Salmonella enterica subsp.
+          enterica serovar Dublin str. CT_02021853]
+ ref|ZP_03214201.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Virchow str. SL491]
+ ref|ZP_03220026.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Javiana str. GA_MM04042433]
+ ref|YP_002228427.1| hypothetical protein SG3649 [Salmonella enterica subsp. enterica
+          serovar Gallinarum str. 287/91]
+ ref|YP_002245662.1| hypothetical protein SEN3601 [Salmonella enterica subsp. enterica
+          serovar Enteritidis str. P125109]
+ ref|ZP_03347421.1| hypothetical protein Salmoneentericaenterica_17584 [Salmonella
+          enterica subsp. enterica serovar Typhi str. E00-7866]
+ ref|ZP_03356581.1| hypothetical protein Salmonentericaenterica_39611 [Salmonella
+          enterica subsp. enterica serovar Typhi str. E01-6750]
+ ref|ZP_03363874.1| hypothetical protein SentesTyph_12959 [Salmonella enterica subsp.
+          enterica serovar Typhi str. E98-0664]
+ ref|ZP_03377829.1| hypothetical protein SentesTy_11112 [Salmonella enterica subsp.
+          enterica serovar Typhi str. J185]
+ ref|ZP_03382157.1| hypothetical protein SentesT_06969 [Salmonella enterica subsp.
+          enterica serovar Typhi str. M223]
+ ref|ZP_04654007.1| hypothetical protein SentesTe_03414 [Salmonella enterica subsp.
+          enterica serovar Tennessee str. CDC07-0191]
+ ref|ZP_06545551.1| hypothetical protein Salmonellentericaenterica_13935 [Salmonella
+          enterica subsp. enterica serovar Typhi str. E98-3139]
+ gb|AAL22644.1| putative inner membrane protein [Salmonella enterica subsp.
+          enterica serovar Typhimurium str. LT2]
+ gb|AAV79433.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Paratyphi A str. ATCC 9150]
+ gb|ABX70017.1| hypothetical protein SPAB_04706 [Salmonella enterica subsp.
+          enterica serovar Paratyphi B str. SPB7]
+ gb|ACF61719.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Newport str. SL254]
+ gb|ACF67424.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Heidelberg str. SL476]
+ gb|EDX47780.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Kentucky str. CVM29188]
+ gb|ACF89736.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Schwarzengrund str. CVM19633]
+ gb|EDX50589.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Newport str. SL317]
+ emb|CAR61666.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Paratyphi A str. AKU_12601]
+ gb|ACH50814.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Agona str. SL483]
+ gb|EDY24876.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Saintpaul str. SARA23]
+ gb|EDY30811.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Schwarzengrund str. SL480]
+ gb|ACH77164.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Dublin str. CT_02021853]
+ gb|EDZ03232.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Virchow str. SL491]
+ gb|EDZ07458.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Javiana str. GA_MM04042433]
+ emb|CAR39434.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Gallinarum str. 287/91]
+ gb|EDZ13714.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Saintpaul str. SARA29]
+ gb|EDZ16146.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar 4,[5],12:i:- str. CVM23701]
+ gb|EDZ19323.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Kentucky str. CDC 191]
+ gb|EDZ25781.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Heidelberg str. SL486]
+ gb|EDZ36814.1| conserved hypothetical protein [Salmonella enterica subsp.
+          enterica serovar Hadar str. RI_05P066]
+ emb|CAR35178.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Enteritidis str. P125109]
+ emb|CBG26787.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Typhimurium str. D23580]
+ gb|ACY90947.1| putative inner membrane protein [Salmonella enterica subsp.
+          enterica serovar Typhimurium str. 14028S]
+          Length = 150
+
+ Score = 34.0 bits (76), Expect = 0.85,   Method: Composition-based stats.
+ Identities = 18/52 (34%), Positives = 27/52 (51%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          SDTR+AI  +S  L I  + IESM+ +MG      F++         ++ AA
+Sbjct: 22 SDTRRAIRRLSERLNIDVVPIESMIDQMGKTAGGEFLQYLHRPDESHLQNAA 73
+
+
+>ref|NP_709531.1| hypothetical protein SF3798 [Shigella flexneri 2a str. 301]
+ ref|NP_839147.1| hypothetical protein S3970 [Shigella flexneri 2a str. 2457T]
+ gb|AAN45238.1| orf, conserved hypothetical protein [Shigella flexneri 2a str.
+          301]
+ gb|AAP18958.1| hypothetical protein S3970 [Shigella flexneri 2a str. 2457T]
+ gb|ADA76090.1| hypothetical protein SFxv_4130 [Shigella flexneri 2002017]
+          Length = 159
+
+ Score = 32.4 bits (72), Expect = 2.5,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 31 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 82
+
+
+>ref|YP_312402.1| hypothetical protein SSON_3616 [Shigella sonnei Ss046]
+ gb|AAZ90167.1| conserved hypothetical protein [Shigella sonnei Ss046]
+          Length = 159
+
+ Score = 32.4 bits (72), Expect = 2.5,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 31 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 82
+
+
+>ref|AP_004129.1| hypothetical protein [Escherichia coli str. K-12 substr. W3110]
+ ref|NP_418119.2| conserved protein [Escherichia coli str. K-12 substr. MG1655]
+ ref|YP_001465147.1| hypothetical protein EcE24377A_4171 [Escherichia coli E24377A]
+ ref|YP_001460463.1| hypothetical protein EcHS_A3876 [Escherichia coli HS]
+ ref|ZP_02773645.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4113]
+ ref|ZP_02778557.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4401]
+ ref|ZP_02784854.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4501]
+ ref|ZP_02791154.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4486]
+ ref|ZP_02797311.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4196]
+ ref|ZP_02804889.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4076]
+ ref|ZP_02810622.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC869]
+ ref|ZP_02823703.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC508]
+ ref|YP_001723050.1| hypothetical protein EcolC_0036 [Escherichia coli ATCC 8739]
+ ref|YP_001732490.1| hypothetical protein ECDH10B_3846 [Escherichia coli str. K-12
+          substr. DH10B]
+ ref|YP_001882492.1| hypothetical protein SbBS512_E4256 [Shigella boydii CDC 3083-94]
+ ref|ZP_02999689.1| conserved hypothetical protein [Escherichia coli 53638]
+ ref|ZP_03027690.1| conserved hypothetical protein [Escherichia coli B7A]
+ ref|ZP_03044941.1| conserved hypothetical protein [Escherichia coli E22]
+ ref|ZP_03060655.1| conserved hypothetical protein [Escherichia coli B171]
+ ref|ZP_03081665.1| hypothetical protein EscherichcoliO157_07423 [Escherichia coli
+          O157:H7 str. EC4024]
+ ref|ZP_03248425.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4206]
+ ref|ZP_03253323.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4045]
+ ref|ZP_03259046.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4042]
+ ref|YP_002273195.1| hypothetical protein ECH74115_5092 [Escherichia coli O157:H7 str.
+          EC4115]
+ ref|YP_002295222.1| hypothetical protein ECSE_3947 [Escherichia coli SE11]
+ ref|YP_002331440.1| hypothetical protein E2348C_3978 [Escherichia coli O127:H6 str.
+          E2348/69]
+ ref|ZP_03442683.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          TW14588]
+ ref|YP_002393657.1| hypothetical protein ECS88_4088 [Escherichia coli S88]
+ ref|YP_002400167.1| hypothetical protein ECED1_4358 [Escherichia coli ED1a]
+ ref|YP_002405052.1| hypothetical protein EC55989_4131 [Escherichia coli 55989]
+ ref|YP_002414824.1| hypothetical protein ECUMN_4190 [Escherichia coli UMN026]
+ ref|YP_002928550.1| hypothetical protein BWG_3354 [Escherichia coli BW2952]
+ ref|YP_003080509.1| hypothetical protein ECSP_4712 [Escherichia coli O157:H7 str.
+          TW14359]
+ ref|ZP_05435184.1| hypothetical protein ShiD9_20530 [Shigella sp. D9]
+ ref|ZP_05439470.1| hypothetical protein E4_19702 [Escherichia sp. 4_1_40B]
+ ref|YP_003224329.1| hypothetical protein ECO103_4494 [Escherichia coli O103:H2 str.
+          12009]
+ ref|YP_003231816.1| hypothetical protein ECO26_4920 [Escherichia coli O26:H11 str.
+          11368]
+ ref|YP_003236796.1| hypothetical protein ECO111_4486 [Escherichia coli O111:H- str.
+          11128]
+ ref|ZP_05940099.1| hypothetical protein EscherichiacoliO157_14613 [Escherichia coli
+          O157:H7 str. FRIK2000]
+ ref|ZP_05951396.1| hypothetical protein EscherichiacoliO157EcO_24102 [Escherichia
+          coli O157:H7 str. FRIK966]
+ sp|P0ADL3|YICN_ECOLI RecName: Full=Uncharacterized protein yicN
+ sp|P0ADL4|YICN_ECOL6 RecName: Full=Uncharacterized protein yicN
+ sp|P0ADL5|YICN_ECO57 RecName: Full=Uncharacterized protein yicN
+ dbj|BAE77630.1| conserved hypothetical protein [Escherichia coli str. K12 substr.
+          W3110]
+ gb|AAC76686.2| conserved protein [Escherichia coli str. K-12 substr. MG1655]
+ gb|ABV08080.1| conserved hypothetical protein [Escherichia coli HS]
+ gb|ABV18883.1| conserved hypothetical protein [Escherichia coli E24377A]
+ gb|ACA75723.1| protein of unknown function DUF1198 [Escherichia coli ATCC 8739]
+ gb|ACB04712.1| conserved protein [Escherichia coli str. K-12 substr. DH10B]
+ gb|ACD09730.1| conserved hypothetical protein [Shigella boydii CDC 3083-94]
+ gb|EDU35299.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4196]
+ gb|EDU55106.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4113]
+ gb|EDU62721.1| conserved hypothetical protein [Escherichia coli 53638]
+ gb|EDU71263.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4076]
+ gb|EDU77623.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4401]
+ gb|EDU82864.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4486]
+ gb|EDU87990.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4501]
+ gb|EDU92837.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC869]
+ gb|EDU97219.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC508]
+ gb|EDV63887.1| conserved hypothetical protein [Escherichia coli B7A]
+ gb|EDV83176.1| conserved hypothetical protein [Escherichia coli E22]
+ gb|EDX30147.1| conserved hypothetical protein [Escherichia coli B171]
+ gb|EDZ75490.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4206]
+ gb|EDZ81958.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4045]
+ gb|EDZ86531.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4042]
+ gb|ACI36249.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          EC4115]
+ dbj|BAG79471.1| conserved hypothetical protein [Escherichia coli SE11]
+ emb|CAS11526.1| predicted protein [Escherichia coli O127:H6 str. E2348/69]
+ gb|EEC31244.1| conserved hypothetical protein [Escherichia coli O157:H7 str.
+          TW14588]
+ emb|CAV00687.1| conserved hypothetical protein [Escherichia coli 55989]
+ emb|CAR05295.1| conserved hypothetical protein [Escherichia coli S88]
+ emb|CAR10484.2| conserved hypothetical protein [Escherichia coli ED1a]
+ emb|CAR15330.1| conserved hypothetical protein [Escherichia coli UMN026]
+ gb|ACR62397.1| conserved protein [Escherichia coli BW2952]
+ gb|ACT74433.1| conserved protein [Escherichia coli O157:H7 str. TW14359]
+ dbj|BAI28076.1| conserved predicted protein [Escherichia coli O26:H11 str. 11368]
+ dbj|BAI33195.1| conserved predicted protein [Escherichia coli O103:H2 str. 12009]
+ dbj|BAI38245.1| conserved predicted protein [Escherichia coli O111:H- str. 11128]
+ gb|ACX37738.1| protein of unknown function DUF1198 [Escherichia coli DH1]
+ dbj|BAI57050.1| conserved hypothetical protein [Escherichia coli SE15]
+ gb|EFE61056.1| yicN protein [Escherichia coli B088]
+ gb|EFF04158.1| yicN protein [Escherichia coli B185]
+ gb|EFF10742.1| conserved hypothetical protein [Escherichia coli B354]
+          Length = 150
+
+ Score = 32.4 bits (72), Expect = 2.5,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 22 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 73
+
+
+  Database: nr
+    Posted date:  Apr 2, 2010 10:12 PM
+  Number of letters in database: 499,999,657
+  Number of sequences in database:  1,533,622
+  
+Lambda     K      H
+   0.314    0.127    0.330 
+
+Lambda     K      H
+   0.267   0.0395    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 69,512,988
+Number of Sequences: 1533622
+Number of extensions: 1440808
+Number of successful extensions: 1970
+Number of sequences better than 10.0: 6
+Number of HSP's better than 10.0 without gapping: 10
+Number of HSP's successfully gapped in prelim test: 2
+Number of HSP's that attempted gapping in prelim test: 1960
+Number of HSP's gapped (non-prelim): 12
+length of query: 54
+length of database: 499,999,657
+effective HSP length: 27
+effective length of query: 27
+effective length of database: 458,591,863
+effective search space: 12381980301
+effective search space used: 12381980301
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (22.0 bits)
+S2: 67 (30.5 bits)

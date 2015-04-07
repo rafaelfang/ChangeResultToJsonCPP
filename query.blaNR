@@ -1,0 +1,276 @@
+BLASTP 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= T0837
+         (54 letters)
+
+Database: MUFOLD_07222012_AA 
+           53,549 sequences; 13,325,351 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+2QNA_A                                                                 27   2.4  
+1QGK_A                                                                 27   2.6  
+2Q5D_A                                                                 27   2.7  
+1UKL_A                                                                 27   2.7  
+1M5N_S                                                                 27   2.8  
+1IBR_B                                                                 27   2.9  
+1F59_A                                                                 27   3.0  
+1GCJ_A                                                                 27   3.3  
+
+>2QNA_A
+          Length = 762
+
+ Score = 26.9 bits (58), Expect = 2.4,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 105 DTRVRVAALQNLVKIMSLYYQYMETYMGP 133
+
+
+>1QGK_A
+          Length = 876
+
+ Score = 26.9 bits (58), Expect = 2.6,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>2Q5D_A
+          Length = 876
+
+ Score = 26.9 bits (58), Expect = 2.7,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>1UKL_A
+          Length = 876
+
+ Score = 26.9 bits (58), Expect = 2.7,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>1M5N_S
+          Length = 485
+
+ Score = 26.9 bits (58), Expect = 2.8,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>1IBR_B
+          Length = 462
+
+ Score = 26.9 bits (58), Expect = 2.9,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>1F59_A
+          Length = 442
+
+ Score = 26.6 bits (57), Expect = 3.0,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>1GCJ_A
+          Length = 460
+
+ Score = 26.6 bits (57), Expect = 3.3,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 236 DTRVRVAALQNLVKIMSLYYQYMETYMGP 264
+
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+Sequences not found previously or not previously below threshold:
+
+1GCJ_A                                                                 29   0.88 
+2Q5D_A                                                                 29   0.88 
+1QGK_A                                                                 29   0.88 
+1F59_A                                                                 29   0.88 
+1M5N_S                                                                 29   0.88 
+1UKL_A                                                                 29   0.88 
+1IBR_B                                                                 29   0.88 
+2QNA_A                                                                 29   0.88 
+
+
+CONVERGED!
+>1GCJ_A
+          Length = 460
+
+ Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 236 DTRVRVAALQNLVKIMSLYYQYMETYMGP 264
+
+
+>2Q5D_A
+          Length = 876
+
+ Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>1QGK_A
+          Length = 876
+
+ Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>1F59_A
+          Length = 442
+
+ Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>1M5N_S
+          Length = 485
+
+ Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>1UKL_A
+          Length = 876
+
+ Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>1IBR_B
+          Length = 462
+
+ Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+
+
+>2QNA_A
+          Length = 762
+
+ Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
+ Identities = 12/29 (41%), Positives = 17/29 (58%)
+
+Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
+           DTR  +  + NL+KI  +Y + M   MGP
+Sbjct: 105 DTRVRVAALQNLVKIMSLYYQYMETYMGP 133
+
+
+  Database: MUFOLD_07222012_AA
+    Posted date:  Dec 8, 2012 12:24 PM
+  Number of letters in database: 13,325,351
+  Number of sequences in database:  53,549
+  
+Lambda     K      H
+   0.314    0.127    0.330 
+
+Lambda     K      H
+   0.267   0.0395    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 1,951,166
+Number of Sequences: 53549
+Number of extensions: 41934
+Number of successful extensions: 52
+Number of sequences better than 10.0: 8
+Number of HSP's better than 10.0 without gapping: 16
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 36
+Number of HSP's gapped (non-prelim): 16
+length of query: 54
+length of database: 13,325,351
+effective HSP length: 26
+effective length of query: 28
+effective length of database: 11,933,077
+effective search space: 334126156
+effective search space used: 334126156
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (22.0 bits)
+S2: 53 (25.1 bits)
