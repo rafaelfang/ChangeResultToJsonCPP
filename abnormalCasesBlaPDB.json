@@ -1,0 +1,90 @@
+{
+"protein1":{
+	"proteinName":"1ESL_A",
+	"Length":"162",
+	"Score":"30.8",
+	"Expect":"0.2",
+	"Identities":"28",
+	"Positives":"42",
+	"Gaps":"21",
+	"QueyStart":"16",
+	"Query":"QELELFKRAMGITPHNYWQWASRTNNFKLLTDGEWVWVEGYEEHIGKQLPLN-QARAWSWEFIKNRLKE",
+	"QueryEnd":"83",
+	"Alignment":"          +E+E     +  +P  YW    + NN        WVWV       G Q PL  +A+ W+ 
+              NR K+
+",
+	"SubjectStart":"33",
+	"Subject":"EEIEYLNSILSYSPSYYWIGIRKVNNV-------WVWV-------GTQKPLTEEAKNWAPGEPNNRQKD",
+	"SubjectEnd":"87"
+},
+"protein2":{
+	"proteinName":"2BAS_B",
+	"Length":"431",
+	"Score":"26.6",
+	"Expect":"3.6",
+	"Identities":"32",
+	"Positives":"46",
+	"Gaps":"30",
+	"QueyStart":"40",
+	"Query":"NNFKLLTDGEWVWVEGYEEHIGKQLPLNQARAWSWE--FIKNRLKELNL",
+	"QueryEnd":"86",
+	"Alignment":"           N FK   DGEW++   Y E           + WSW   F++N ++  NL
+",
+	"SubjectStart":"349",
+	"Subject":"NVFK--QDGEWIYQPEYAE-----------KNWSWRPYFLENIMRMRNL",
+	"SubjectEnd":"384"
+},
+"protein3":{
+	"proteinName":"2BAS_B",
+	"Length":"431",
+	"Score":"20",
+	"Expect":"374",
+	"Identities":"30",
+	"Positives":"60",
+	"Gaps":"0",
+	"QueyStart":"10",
+	"Query":"VRELTPQELELFKRAMGITPHNY",
+	"QueryEnd":"32",
+	"Alignment":"           ++E   + +EL +  + IT HN+
+",
+	"SubjectStart":"130",
+	"Subject":"LKEYEAKGIELHRFVLEITEHNF",
+	"SubjectEnd":"152"
+},
+"protein4":{
+	"proteinName":"2BAS_B",
+	"Length":"431",
+	"Score":"15.4",
+	"Expect":"7729",
+	"Identities":"21",
+	"Positives":"53",
+	"Gaps":"0",
+	"QueyStart":"1",
+	"Query":"GSEEKEEKKVRELTPQELELFKRAMGIT",
+	"QueryEnd":"28",
+	"Alignment":"           G E     ++  L+P  L++  +A+ ++
+",
+	"SubjectStart":"179",
+	"Subject":"GKESSNLDRIALLSPDLLKIDLQALKVS",
+	"SubjectEnd":"206"
+},
+"protein5":{
+	"proteinName":"1G1T_A",
+	"Length":"157",
+	"Score":"30.4",
+	"Expect":"0.27",
+	"Identities":"28",
+	"Positives":"42",
+	"Gaps":"21",
+	"QueyStart":"16",
+	"Query":"QELELFKRAMGITPHNYWQWASRTNNFKLLTDGEWVWVEGYEEHIGKQLPLN-QARAWSWEFIKNRLKE",
+	"QueryEnd":"83",
+	"Alignment":"          +E+E     +  +P  YW    + NN        WVWV       G Q PL  +A+ W+ 
+              NR K+
+",
+	"SubjectStart":"33",
+	"Subject":"EEIEYLNSILSYSPSYYWIGIRKVNNV-------WVWV-------GTQKPLTEEAKNWAPGEPNNRQKD",
+	"SubjectEnd":"87"
+},
+"finish":"end"
+}
