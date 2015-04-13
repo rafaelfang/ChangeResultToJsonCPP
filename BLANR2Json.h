@@ -13,10 +13,11 @@
 #include <fstream>
 #include <string.h>
 #include "ConvertTools.h"
+#include "BLANRResult.h"
 using namespace std;
 class BLANR2Json: public ConvertTools {
 public:
-	BLANR2Json(char*);
+	BLANR2Json(char*,char*);
 	void convert();
 
 	virtual ~BLANR2Json();
