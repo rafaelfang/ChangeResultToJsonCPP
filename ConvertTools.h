@@ -9,17 +9,23 @@
 #define CONVERTTOOLS_H_
 #include <iostream>
 #include <fstream>
+#include <stdio.h>
+#include <assert.h>
+#include <iostream>
+#include <fstream>
+#include <string.h>
 
 using namespace std;
 
 class ConvertTools {
 public:
-	ConvertTools(char*);
+	ConvertTools(char*,char*);
 	virtual ~ConvertTools();
 	void trim(string& str);
 	virtual void convert()=0;
 protected:
-	char* fileName;
+	char* inputFilename;
+	char* outputJsonFilename;
 };
 
 #endif /* CONVERTTOOLS_H_ */

@@ -7,9 +7,11 @@
 
 #include "ConvertTools.h"
 
-ConvertTools::ConvertTools(char* theFilename) {
+ConvertTools::ConvertTools(char* theInputFilename,
+		char* theOutputJsonFilename) {
 	// TODO Auto-generated constructor stub
-	fileName = theFilename;
+	inputFilename = theInputFilename;
+	outputJsonFilename = theOutputJsonFilename;
 }
 void ConvertTools::trim(string& s) {
 
