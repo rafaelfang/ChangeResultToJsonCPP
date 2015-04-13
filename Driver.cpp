@@ -12,13 +12,27 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	HHR2Json hhr2Json(argv[1]);
-	hhr2Json.convert();
-	HHRNR2Json hhrNR2Json(argv[2]);
-	hhrNR2Json.convert();
-	BLANR2Json blaNR2Json(argv[3]);
-	blaNR2Json.convert();
-	BLAPDB2Json blaPDB2Json(argv[4]);
-	blaPDB2Json.convert();
+	if (argc != 4) {
+		cout << "not enough arguments" << endl;
+		cout << "<executable> <type> <inputFilename> <outputJsonFilename> "
+				<< endl;
+	}
+	if (strcmp(argv[1], "-hhr2Json") == 0) {
+		HHR2Json hhr2Json(argv[2], argv[3]);
+		hhr2Json.convert();
+	}
+	if (strcmp(argv[1], "-hhrNR2Json") == 0) {
+		HHRNR2Json hhrNR2Json(argv[2], argv[3]);
+		hhrNR2Json.convert();
+	}
+	if (strcmp(argv[1], "-blaNR2Json") == 0) {
+		BLANR2Json blaNR2Json(argv[2], argv[3]);
+		blaNR2Json.convert();
+	}
+	if (strcmp(argv[1], "-blaPDB2Json") == 0) {
+		BLAPDB2Json blaPDB2Json(argv[2], argv[3]);
+		blaPDB2Json.convert();
+	}
+
 }
 
