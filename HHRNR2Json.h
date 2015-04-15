@@ -9,13 +9,18 @@
 #define HHRNR2JSON_H_
 #include "HHRNRResult.h"
 #include "ConvertTools.h"
+#include <vector>
 using namespace std;
 class HHRNR2Json: public ConvertTools {
 public:
-	HHRNR2Json(char*,char*);
+	HHRNR2Json(char*, char*);
 	void convert();
+	void write2JsonFile();
 	virtual ~HHRNR2Json();
 
+
+private:
+	vector<HHRNRResult> HHRNRResultVector;
 };
 
 #endif /* HHRNR2JSON_H_ */
