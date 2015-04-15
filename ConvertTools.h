@@ -23,6 +23,7 @@ public:
 	virtual ~ConvertTools();
 	void trim(string& str);
 	virtual void convert()=0;
+	virtual void write2JsonFile()=0;
 protected:
 	char* inputFilename;
 	char* outputJsonFilename;
