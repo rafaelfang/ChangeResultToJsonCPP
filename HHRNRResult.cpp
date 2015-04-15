@@ -40,8 +40,6 @@ void HHRNRResult::setConfidence(string& confidence) {
 	this->confidence = confidence;
 }
 
-
-
 int HHRNRResult::getIdentities() {
 	return identities;
 }
@@ -138,7 +136,7 @@ void HHRNRResult::setTargetConsensus(string& targetConsensus) {
 	this->targetConsensus = targetConsensus;
 }
 
-float HHRNRResult::getExpect()  {
+float HHRNRResult::getExpect() {
 	return expect;
 }
 
@@ -146,7 +144,7 @@ void HHRNRResult::setExpect(float expect) {
 	this->expect = expect;
 }
 
-int HHRNRResult::getQueryEnd()  {
+int HHRNRResult::getQueryEnd() {
 	return queryEnd;
 }
 
@@ -154,7 +152,7 @@ void HHRNRResult::setQueryEnd(int queryEnd) {
 	this->queryEnd = queryEnd;
 }
 
-int HHRNRResult::getQueryStart()  {
+int HHRNRResult::getQueryStart() {
 	return queryStart;
 }
 
@@ -162,7 +160,7 @@ void HHRNRResult::setQueryStart(int queryStart) {
 	this->queryStart = queryStart;
 }
 
-int HHRNRResult::getTargetEnd()  {
+int HHRNRResult::getTargetEnd() {
 	return targetEnd;
 }
 
@@ -170,10 +168,18 @@ void HHRNRResult::setTargetEnd(int targetEnd) {
 	this->targetEnd = targetEnd;
 }
 
-int HHRNRResult::getTargetStart()  {
+int HHRNRResult::getTargetStart() {
 	return targetStart;
 }
 
 void HHRNRResult::setTargetStart(int targetStart) {
 	this->targetStart = targetStart;
+}
+
+string& HHRNRResult::getQuerySsPred() {
+	return query_ss_pred;
+}
+
+void HHRNRResult::setQuerySsPred(string& querySsPred) {
+	query_ss_pred = querySsPred;
 }
