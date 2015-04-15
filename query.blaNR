@@ -17,260 +17,431 @@ composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994
 Query= T0837
          (54 letters)
 
-Database: MUFOLD_07222012_AA 
-           53,549 sequences; 13,325,351 total letters
+Database: nr 
+           4,318,227 sequences; 1,487,489,705 total letters
 
 Searching..................................................done
 
-
-Results from round 1
 
 
                                                                  Score    E
 Sequences producing significant alignments:                      (bits) Value
 
-2QNA_A                                                                 27   2.4  
-1QGK_A                                                                 27   2.6  
-2Q5D_A                                                                 27   2.7  
-1UKL_A                                                                 27   2.7  
-1M5N_S                                                                 27   2.8  
-1IBR_B                                                                 27   2.9  
-1F59_A                                                                 27   3.0  
-1GCJ_A                                                                 27   3.3  
+ref|NP_993781.1| hypothetical protein YP_2458 [Yersinia pestis b...   116   4e-25
+ref|ZP_01495848.1| hypothetical protein YpseI_02000967 [Yersinia...   115   8e-25
+ref|NP_406176.1| hypothetical protein YPO2654 [Yersinia pestis C...   114   1e-24
+ref|ZP_00825455.1| hypothetical protein YmolA_01002086 [Yersinia...   112   4e-24
+ref|ZP_00821789.1| hypothetical protein YberA_01002021 [Yersinia...   112   6e-24
+ref|ZP_00828662.1| hypothetical protein YfreA_01003100 [Yersinia...   112   7e-24
+ref|ZP_00833295.1| hypothetical protein YintA_01002383 [Yersinia...   110   3e-23
+ref|ZP_01538177.1| conserved hypothetical protein [Serratia prot...   105   5e-22
+ref|ZP_01589609.1| protein of unknown function DUF1198 [Enteroba...    40   0.031
+ref|YP_340947.1| stress response DNA-binding protein Dps [Pseudo...    38   0.16 
+ref|NP_462685.1| putative inner membrane protein [Salmonella typ...    38   0.17 
+ref|NP_458151.1| hypothetical protein STY3996 [Salmonella enteri...    37   0.19 
+ref|ZP_00927093.1| COG0621: 2-methylthioadenine synthetase [Esch...    36   0.59 
+ref|AP_004129.1| hypothetical protein [Escherichia coli W3110] >...    35   0.91 
+ref|ZP_00697824.1| COG0621: 2-methylthioadenine synthetase [Shig...    35   0.94 
+ref|YP_691161.1| hypothetical protein SFV_3846 [Shigella flexner...    35   0.96 
+ref|NP_290297.1| hypothetical protein Z5152 [Escherichia coli O1...    35   1.0  
+ref|YP_312402.1| hypothetical protein SSO_3616 [Shigella sonnei ...    35   1.1  
+ref|ZP_00720484.1| COG0621: 2-methylthioadenine synthetase [Esch...    35   1.1  
+ref|YP_671741.1| hypothetical protein ECP_3869 [Escherichia coli...    35   1.1  
+ref|NP_709531.1| hypothetical protein SF3798 [Shigella flexneri ...    35   1.1  
+ref|ZP_00922897.1| COG0442: Prolyl-tRNA synthetase [Shigella dys...    35   1.4  
+ref|YP_000562.1| hypothetical protein LIC10578 [Leptospira inter...    33   3.5  
+ref|NP_713812.1| PBS lyase HEAT-like repeat containing protein [...    33   3.8  
+
+>ref|NP_993781.1| hypothetical protein YP_2458 [Yersinia pestis biovar Microtus
+          str. 91001]
+ gb|AAS62658.1| putative membrane protein [Yersinia pestis biovar Microtus str.
+          91001]
+          Length = 163
+
+ Score =  116 bits (290), Expect = 4e-25,   Method: Composition-based stats.
+ Identities = 54/54 (100%), Positives = 54/54 (100%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 54
+          SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL
+Sbjct: 22 SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 75
+
+
+>ref|ZP_01495848.1| hypothetical protein YpseI_02000967 [Yersinia pseudotuberculosis
+          IP 31758]
+          Length = 149
+
+ Score =  115 bits (287), Expect = 8e-25,   Method: Composition-based stats.
+ Identities = 53/54 (98%), Positives = 54/54 (100%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 54
+          SDTRKAIDT+SNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL
+Sbjct: 22 SDTRKAIDTLSNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 75
+
+
+>ref|NP_406176.1| hypothetical protein YPO2654 [Yersinia pestis CO92]
+ ref|NP_668552.1| hypothetical protein y1228 [Yersinia pestis KIM]
+ ref|YP_071458.1| hypothetical protein YPTB2952 [Yersinia pseudotuberculosis IP
+          32953]
+ ref|ZP_00797126.1| hypothetical protein YpesA_01001658 [Yersinia pestis Angola]
+ ref|ZP_01176127.1| hypothetical protein Ypesb_01002451 [Yersinia pestis biovar
+          Orientalis str. IP275]
+ ref|YP_652294.1| hypothetical protein YPA_2384 [Yersinia pestis Antiqua]
+ ref|YP_647070.1| membrane protein [Yersinia pestis Nepal516]
+ gb|AAM84803.1|AE013726_6 hypothetical [Yersinia pestis KIM]
+ emb|CAH22190.1| putative membrane protein [Yersinia pseudotuberculosis IP 32953]
+ gb|ABG17470.1| membrane protein [Yersinia pestis Nepal516]
+ gb|ABG14349.1| putative membrane protein [Yersinia pestis Antiqua]
+ emb|CAL21275.1| putative membrane protein [Yersinia pestis CO92]
+          Length = 149
+
+ Score =  114 bits (286), Expect = 1e-24,   Method: Composition-based stats.
+ Identities = 54/54 (100%), Positives = 54/54 (100%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 54
+          SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL
+Sbjct: 22 SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 75
+
+
+>ref|ZP_00825455.1| hypothetical protein YmolA_01002086 [Yersinia mollaretii ATCC
+          43969]
+          Length = 149
 
->2QNA_A
-          Length = 762
+ Score =  112 bits (281), Expect = 4e-24,   Method: Composition-based stats.
+ Identities = 48/54 (88%), Positives = 52/54 (96%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 54
+          SDTRKA+DT++NLLKIKPIYIESMLQEMG RQTQMFIRSTSNG AE+VRKAAYL
+Sbjct: 22 SDTRKAVDTLANLLKIKPIYIESMLQEMGQRQTQMFIRSTSNGYAEDVRKAAYL 75
+
+
+>ref|ZP_00821789.1| hypothetical protein YberA_01002021 [Yersinia bercovieri ATCC
+          43970]
+          Length = 149
+
+ Score =  112 bits (280), Expect = 6e-24,   Method: Composition-based stats.
+ Identities = 48/54 (88%), Positives = 52/54 (96%)
+
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 54
+          SDTRKA+DT++NLLKIKPIYIESMLQEMG RQTQMFIRSTSNG AE+VRKAAYL
+Sbjct: 22 SDTRKAVDTLANLLKIKPIYIESMLQEMGQRQTQMFIRSTSNGYAEDVRKAAYL 75
+
+
+>ref|ZP_00828662.1| hypothetical protein YfreA_01003100 [Yersinia frederiksenii ATCC
+          33641]
+          Length = 149
 
- Score = 26.9 bits (58), Expect = 2.4,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score =  112 bits (279), Expect = 7e-24,   Method: Composition-based stats.
+ Identities = 48/54 (88%), Positives = 52/54 (96%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 105 DTRVRVAALQNLVKIMSLYYQYMETYMGP 133
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 54
+          SDTRKA+DT++NLLKIKPIYIESMLQEMG RQTQMFIRSTSNG AE+VRKAAYL
+Sbjct: 22 SDTRKAVDTLANLLKIKPIYIESMLQEMGQRQTQMFIRSTSNGYAEDVRKAAYL 75
 
 
->1QGK_A
-          Length = 876
+>ref|ZP_00833295.1| hypothetical protein YintA_01002383 [Yersinia intermedia ATCC
+          29909]
+          Length = 149
 
- Score = 26.9 bits (58), Expect = 2.6,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score =  110 bits (274), Expect = 3e-23,   Method: Composition-based stats.
+ Identities = 48/54 (88%), Positives = 52/54 (96%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 54
+          SDTRKA+DT++NLLKIKPIYIESMLQEMG RQTQMFIRSTSNG AE+VRKAAYL
+Sbjct: 22 SDTRKAVDTLANLLKIKPIYIESMLQEMGQRQTQMFIRSTSNGYAEDVRKAAYL 75
 
 
->2Q5D_A
-          Length = 876
+>ref|ZP_01538177.1| conserved hypothetical protein [Serratia proteamaculans 568]
+ gb|EAV29766.1| conserved hypothetical protein [Serratia proteamaculans 568]
+          Length = 148
 
- Score = 26.9 bits (58), Expect = 2.7,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score =  105 bits (263), Expect = 5e-22,   Method: Composition-based stats.
+ Identities = 34/54 (62%), Positives = 45/54 (83%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL 54
+          SDTRKAID++++LLK+KP+ IESM+QEMG R +Q FIR  +NG  EE+ +AAYL
+Sbjct: 22 SDTRKAIDSLAHLLKVKPMLIESMIQEMGSRNSQTFIRVLNNGYTEEMHQAAYL 75
 
 
->1UKL_A
-          Length = 876
+>ref|ZP_01589609.1| protein of unknown function DUF1198 [Enterobacter sp. 638]
+ gb|EAV84177.1| protein of unknown function DUF1198 [Enterobacter sp. 638]
+          Length = 150
 
- Score = 26.9 bits (58), Expect = 2.7,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 40.0 bits (92), Expect = 0.031,   Method: Composition-based stats.
+ Identities = 18/52 (34%), Positives = 27/52 (51%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          SD+R+AI  +S  L I P+ +ESM+ + G      FIR         ++ AA
+Sbjct: 22 SDSRRAIKRLSERLGITPVPLESMIDQFGKTAGNEFIRYLERPDEAHLQNAA 73
 
 
->1M5N_S
-          Length = 485
+>ref|YP_340947.1| stress response DNA-binding protein Dps [Pseudoalteromonas
+           haloplanktis TAC125]
+ emb|CAI87505.1| stress response DNA-binding protein Dps [Pseudoalteromonas
+           haloplanktis TAC125]
+          Length = 171
 
- Score = 26.9 bits (58), Expect = 2.8,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 37.7 bits (86), Expect = 0.16,   Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 29/50 (58%), Gaps = 2/50 (4%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1   SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRK 50
+           SD RKAIDT+++L  +    I S L E+   Q Q FIR+    S  E++K
+Sbjct: 124 SDHRKAIDTLADLDPVSEDMITSQLAEL--EQFQWFIRAHLESSTGELQK 171
 
 
->1IBR_B
-          Length = 462
+>ref|NP_462685.1| putative inner membrane protein [Salmonella typhimurium LT2]
+ ref|YP_152745.1| hypothetical protein SPA3636 [Salmonella enterica subsp. enterica
+          serovar Paratyphi A str. ATCC 9150]
+ gb|AAL22644.1| putative inner membrane protein [Salmonella typhimurium LT2]
+ gb|AAV79433.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Paratyphi A str. ATCC 9150]
+          Length = 150
 
- Score = 26.9 bits (58), Expect = 2.9,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 37.7 bits (86), Expect = 0.17,   Method: Composition-based stats.
+ Identities = 18/52 (34%), Positives = 27/52 (51%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          SDTR+AI  +S  L I  + IESM+ +MG      F++         ++ AA
+Sbjct: 22 SDTRRAIRRLSERLNIDVVPIESMIDQMGKTAGGEFLQYLHRPDESHLQNAA 73
 
 
->1F59_A
-          Length = 442
+>ref|NP_458151.1| hypothetical protein STY3996 [Salmonella enterica subsp. enterica
+          serovar Typhi str. CT18]
+ ref|NP_807365.1| hypothetical protein t3732 [Salmonella enterica subsp. enterica
+          serovar Typhi Ty2]
+ ref|YP_218694.1| putative inner membrane protein [Salmonella enterica subsp.
+          enterica serovar Choleraesuis str. SC-B67]
+ pir||AD0964 probable exported protein STY3996 [imported] - Salmonella
+          enterica subsp. enterica serovar Typhi (strain CT18)
+ emb|CAD03208.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Typhi]
+ gb|AAO71225.1| putative exported protein [Salmonella enterica subsp. enterica
+          serovar Typhi Ty2]
+ gb|AAX67613.1| putative inner membrane protein [Salmonella enterica subsp.
+          enterica serovar Choleraesuis str. SC-B67]
+          Length = 152
 
- Score = 26.6 bits (57), Expect = 3.0,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 37.3 bits (85), Expect = 0.19,   Method: Composition-based stats.
+ Identities = 18/52 (34%), Positives = 27/52 (51%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          SDTR+AI  +S  L I  + IESM+ +MG      F++         ++ AA
+Sbjct: 24 SDTRRAIRRLSERLNIDVVPIESMIDQMGKTAGGEFLQYLHRPDESHLQNAA 75
 
 
->1GCJ_A
-          Length = 460
+>ref|ZP_00927093.1| COG0621: 2-methylthioadenine synthetase [Escherichia coli 101-1]
+          Length = 146
 
- Score = 26.6 bits (57), Expect = 3.3,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 35.7 bits (81), Expect = 0.59,   Method: Composition-based stats.
+ Identities = 18/52 (34%), Positives = 26/52 (50%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 236 DTRVRVAALQNLVKIMSLYYQYMETYMGP 264
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  I +ESM+ +MG      F+R         ++ AA
+Sbjct: 18 SGARKAIRRLSDRLNIDVIPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 69
 
 
-Searching..................................................done
+>ref|AP_004129.1| hypothetical protein [Escherichia coli W3110]
+ ref|NP_418119.2| hypothetical protein b3663 [Escherichia coli K12]
+ dbj|BAE77630.1| conserved hypothetical protein [Escherichia coli W3110]
+ gb|AAC76686.2| conserved protein [Escherichia coli K12]
+          Length = 150
 
+ Score = 35.4 bits (80), Expect = 0.91,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
 
-Results from round 2
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 22 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 73
 
 
-                                                                 Score    E
-Sequences producing significant alignments:                      (bits) Value
-Sequences used in model and found again:
+>ref|ZP_00697824.1| COG0621: 2-methylthioadenine synthetase [Shigella boydii BS512]
+ ref|ZP_00701689.1| COG0621: 2-methylthioadenine synthetase [Escherichia coli
+          E24377A]
+ ref|ZP_00707636.1| COG0621: 2-methylthioadenine synthetase [Escherichia coli HS]
+ ref|ZP_00710864.1| COG0621: 2-methylthioadenine synthetase [Escherichia coli B171]
+ ref|ZP_00717502.1| COG0621: 2-methylthioadenine synthetase [Escherichia coli B7A]
+ ref|ZP_00729653.1| COG0621: 2-methylthioadenine synthetase [Escherichia coli E22]
+ ref|ZP_00736578.1| COG0621: 2-methylthioadenine synthetase [Escherichia coli 53638]
+          Length = 146
 
-Sequences not found previously or not previously below threshold:
+ Score = 35.4 bits (80), Expect = 0.94,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
 
-1GCJ_A                                                                 29   0.88 
-2Q5D_A                                                                 29   0.88 
-1QGK_A                                                                 29   0.88 
-1F59_A                                                                 29   0.88 
-1M5N_S                                                                 29   0.88 
-1UKL_A                                                                 29   0.88 
-1IBR_B                                                                 29   0.88 
-2QNA_A                                                                 29   0.88 
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 18 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 69
 
 
-CONVERGED!
->1GCJ_A
-          Length = 460
+>ref|YP_691161.1| hypothetical protein SFV_3846 [Shigella flexneri 5 str. 8401]
+ gb|ABF05856.1| conserved hypothetical protein [Shigella flexneri 5 str. 8401]
+          Length = 150
 
- Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 35.4 bits (80), Expect = 0.96,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 236 DTRVRVAALQNLVKIMSLYYQYMETYMGP 264
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 22 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 73
 
 
->2Q5D_A
-          Length = 876
+>ref|NP_290297.1| hypothetical protein Z5152 [Escherichia coli O157:H7 EDL933]
+ ref|NP_312626.1| hypothetical protein ECs4599 [Escherichia coli O157:H7 str.
+          Sakai]
+ ref|NP_756447.1| Hypothetical protein yicN [Escherichia coli CFT073]
+ ref|YP_410011.1| hypothetical protein SBO_3708 [Shigella boydii Sb227]
+ ref|YP_405545.1| hypothetical protein SDY_4144 [Shigella dysenteriae Sd197]
+ ref|YP_543177.1| hypothetical protein UTI89_C4219 [Escherichia coli UTI89]
+ ref|YP_859267.1| hypothetical protein APECO1_2789 [Escherichia coli APEC O1]
+ sp|P0ADL5|YICN_ECO57 Hypothetical protein yicN
+ sp|P0ADL4|YICN_ECOL6 Hypothetical protein yicN
+ sp|P0ADL3|YICN_ECOLI Hypothetical protein yicN
+ gb|AAG58861.1|AE005598_5 orf, hypothetical protein [Escherichia coli O157:H7 EDL933]
+ gb|AAN83021.1|AE016769_136 Hypothetical protein yicN [Escherichia coli CFT073]
+ gb|AAA62015.1| f159
+ dbj|BAB38022.1| hypothetical protein [Escherichia coli O157:H7 str. Sakai]
+ gb|ABB64054.1| conserved hypothetical protein [Shigella dysenteriae Sd197]
+ gb|ABB68183.1| conserved hypothetical protein [Shigella boydii Sb227]
+ gb|ABE09646.1| hypothetical protein UTI89_C4219 [Escherichia coli UTI89]
+ gb|ABJ03143.1| conserved hypothetical protein [Escherichia coli APEC O1]
+          Length = 159
 
- Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 35.0 bits (79), Expect = 1.0,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 31 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 82
 
 
->1QGK_A
-          Length = 876
+>ref|YP_312402.1| hypothetical protein SSO_3616 [Shigella sonnei Ss046]
+ gb|AAZ90167.1| conserved hypothetical protein [Shigella sonnei Ss046]
+          Length = 159
 
- Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 35.0 bits (79), Expect = 1.1,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 31 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 82
 
 
->1F59_A
-          Length = 442
+>ref|ZP_00720484.1| COG0621: 2-methylthioadenine synthetase [Escherichia coli
+          E110019]
+ ref|ZP_00726285.1| COG0621: 2-methylthioadenine synthetase [Escherichia coli F11]
+          Length = 146
 
- Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 35.0 bits (79), Expect = 1.1,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 18 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 69
 
 
->1M5N_S
-          Length = 485
+>ref|YP_671741.1| hypothetical protein ECP_3869 [Escherichia coli 536]
+ gb|ABG71840.1| hypothetical protein ECP_3869 [Escherichia coli 536]
+          Length = 159
 
- Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 35.0 bits (79), Expect = 1.1,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 31 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 82
 
 
->1UKL_A
-          Length = 876
+>ref|NP_709531.1| hypothetical protein SF3798 [Shigella flexneri 2a str. 301]
+ ref|NP_839147.1| hypothetical protein S3970 [Shigella flexneri 2a str. 2457T]
+ gb|AAN45238.1| orf, conserved hypothetical protein [Shigella flexneri 2a str.
+          301]
+ gb|AAP18958.1| hypothetical protein S_3970 [Shigella flexneri 2a str. 2457T]
+          Length = 159
 
- Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 35.0 bits (79), Expect = 1.1,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 31 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 82
 
 
->1IBR_B
-          Length = 462
+>ref|ZP_00922897.1| COG0442: Prolyl-tRNA synthetase [Shigella dysenteriae 1012]
+          Length = 82
 
- Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 34.6 bits (78), Expect = 1.4,   Method: Composition-based stats.
+ Identities = 17/52 (32%), Positives = 26/52 (50%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 230 DTRVRVAALQNLVKIMSLYYQYMETYMGP 258
+Query: 1  SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAA 52
+          S  RKAI  +S+ L I  + +ESM+ +MG      F+R         ++ AA
+Sbjct: 31 SGARKAIRRLSDRLNIDVVPVESMVDQMGKSAGDEFLRYLHRPDESHLQNAA 82
 
 
->2QNA_A
-          Length = 762
+>ref|YP_000562.1| hypothetical protein LIC10578 [Leptospira interrogans serovar
+           Copenhageni str. Fiocruz L1-130]
+ gb|AAS69199.1| conserved hypothetical protein [Leptospira interrogans serovar
+           Copenhageni str. Fiocruz L1-130]
+          Length = 486
 
- Score = 28.6 bits (62), Expect = 0.88,   Method: Composition-based stats.
- Identities = 12/29 (41%), Positives = 17/29 (58%)
+ Score = 33.4 bits (75), Expect = 3.5,   Method: Composition-based stats.
+ Identities = 13/52 (25%), Positives = 28/52 (53%), Gaps = 4/52 (7%)
 
-Query: 2   DTRKAIDTISNLLKIKPIYIESMLQEMGP 30
-           DTR  +  + NL+KI  +Y + M   MGP
-Sbjct: 105 DTRVRVAALQNLVKIMSLYYQYMETYMGP 133
+Query: 3   TRKAIDTISNLLKIKPIYIESMLQEMGPRQ----TQMFIRSTSNGSAEEVRK 50
+           TR ++  +   L+ KP Y++++++ +G       T  FIR   N  +E++ +
+Sbjct: 280 TRASLRILEQTLETKPQYVKNIIEAIGQNTSLYGTYSFIRILENSISEDLTQ 331
 
 
-  Database: MUFOLD_07222012_AA
-    Posted date:  Dec 8, 2012 12:24 PM
-  Number of letters in database: 13,325,351
-  Number of sequences in database:  53,549
+>ref|NP_713812.1| PBS lyase HEAT-like repeat containing protein [Leptospira
+           interrogans serovar Lai str. 56601]
+ gb|AAN50830.1|AE011518_9 PBS lyase HEAT-like repeat containing protein [Leptospira
+           interrogans serovar Lai str. 56601]
+          Length = 486
+
+ Score = 33.0 bits (74), Expect = 3.8,   Method: Composition-based stats.
+ Identities = 13/52 (25%), Positives = 28/52 (53%), Gaps = 4/52 (7%)
+
+Query: 3   TRKAIDTISNLLKIKPIYIESMLQEMGPRQ----TQMFIRSTSNGSAEEVRK 50
+           TR ++  +   L+ KP Y++++++ +G       T  FIR   N  +E++ +
+Sbjct: 280 TRASLRILEQTLETKPQYVKNIIEAIGQNTSLYGTYSFIRILENSISEDLTQ 331
+
+
+  Database: nr
+    Posted date:  Dec 19, 2006  5:54 PM
+  Number of letters in database: 926,774,036
+  Number of sequences in database:  2,720,441
+  
+  Database: /home/lihongb//DATABASE/nr/nr.01
+    Posted date:  Dec 19, 2006  5:49 PM
+  Number of letters in database: 560,715,669
+  Number of sequences in database:  1,597,786
   
 Lambda     K      H
-   0.314    0.127    0.330 
+   0.304    0.140    0.384 
 
 Lambda     K      H
-   0.267   0.0395    0.140 
+   0.267   0.0436    0.140 
 
 
 Matrix: BLOSUM62
 Gap Penalties: Existence: 11, Extension: 1
-Number of Hits to DB: 1,951,166
-Number of Sequences: 53549
-Number of extensions: 41934
-Number of successful extensions: 52
-Number of sequences better than 10.0: 8
-Number of HSP's better than 10.0 without gapping: 16
-Number of HSP's successfully gapped in prelim test: 0
-Number of HSP's that attempted gapping in prelim test: 36
-Number of HSP's gapped (non-prelim): 16
+Number of Hits to DB: 163,229,524
+Number of Sequences: 4318227
+Number of extensions: 5192203
+Number of successful extensions: 8821
+Number of sequences better than 10.0: 25
+Number of HSP's better than 10.0 without gapping: 22
+Number of HSP's successfully gapped in prelim test: 3
+Number of HSP's that attempted gapping in prelim test: 8799
+Number of HSP's gapped (non-prelim): 25
 length of query: 54
-length of database: 13,325,351
-effective HSP length: 26
-effective length of query: 28
-effective length of database: 11,933,077
-effective search space: 334126156
-effective search space used: 334126156
+length of database: 1,487,489,705
+effective HSP length: 27
+effective length of query: 27
+effective length of database: 1,370,897,576
+effective search space: 37014234552
+effective search space used: 37014234552
 T: 11
 A: 40
-X1: 16 ( 7.2 bits)
+X1: 16 ( 7.0 bits)
 X2: 38 (14.6 bits)
 X3: 64 (24.7 bits)
-S1: 42 (22.0 bits)
-S2: 53 (25.1 bits)
+S1: 42 (21.3 bits)
+S2: 71 (31.9 bits)
