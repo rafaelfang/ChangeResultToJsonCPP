@@ -18,7 +18,7 @@ void BLAPDB2Json::convert() {
 	ofstream outputFile(outputJsonFilename);
 	char line[500];
 	int counter = 1;
-	BlaPDBResult result;
+	BLAPDBResult result;
 	outputFile << "{\n";
 	while (fgets(line, 500, fptr) != NULL) {
 		if ((strstr(line, ">") != NULL) && !result.isFirstStateReached()) {
@@ -126,30 +126,7 @@ void BLAPDB2Json::convert() {
 				&& result.isSecondStateReached()) {
 
 			//first write the protein information to json
-			outputFile << "\"protein" << counter << "\":{\n";
-			outputFile << "\t\"proteinName\":\"" << result.getProteinName()
-					<< "\",\n";
-			outputFile << "\t\"Length\":\"" << result.getLength() << "\",\n";
-			outputFile << "\t\"Score\":\"" << result.getScore() << "\",\n";
-			outputFile << "\t\"Expect\":\"" << result.getExpect() << "\",\n";
-			outputFile << "\t\"Identities\":\"" << result.getIdentities()
-					<< "\",\n";
-			outputFile << "\t\"Positives\":\"" << result.getPositives()
-					<< "\",\n";
-			outputFile << "\t\"Gaps\":\"" << result.getGaps() << "\",\n";
-			outputFile << "\t\"QueyStart\":\"" << result.getQueryStart()
-					<< "\",\n";
-			outputFile << "\t\"Query\":\"" << result.getQuery() << "\",\n";
-			outputFile << "\t\"QueryEnd\":\"" << result.getQueryEnd()
-					<< "\",\n";
-			outputFile << "\t\"Alignment\":\"" << result.getAlignment()
-					<< "\",\n";
-			outputFile << "\t\"SubjectStart\":\"" << result.getSubjectStart()
-					<< "\",\n";
-			outputFile << "\t\"Subject\":\"" << result.getSubject() << "\",\n";
-			outputFile << "\t\"SubjectEnd\":\"" << result.getSubjectEnd()
-					<< "\"\n";
-			outputFile << "},\n";
+			BLAPDBResultVector.push_back(result);
 			counter++;
 			//then update the information and set the second state flag
 			float score;
@@ -187,30 +164,7 @@ void BLAPDB2Json::convert() {
 		if ((strstr(line, ">") != NULL) && result.isFirstStateReached()) {
 
 			//first write the protein information to json
-			outputFile << "\"protein" << counter << "\":{\n";
-			outputFile << "\t\"proteinName\":\"" << result.getProteinName()
-					<< "\",\n";
-			outputFile << "\t\"Length\":\"" << result.getLength() << "\",\n";
-			outputFile << "\t\"Score\":\"" << result.getScore() << "\",\n";
-			outputFile << "\t\"Expect\":\"" << result.getExpect() << "\",\n";
-			outputFile << "\t\"Identities\":\"" << result.getIdentities()
-					<< "\",\n";
-			outputFile << "\t\"Positives\":\"" << result.getPositives()
-					<< "\",\n";
-			outputFile << "\t\"Gaps\":\"" << result.getGaps() << "\",\n";
-			outputFile << "\t\"QueyStart\":\"" << result.getQueryStart()
-					<< "\",\n";
-			outputFile << "\t\"Query\":\"" << result.getQuery() << "\",\n";
-			outputFile << "\t\"QueryEnd\":\"" << result.getQueryEnd()
-					<< "\",\n";
-			outputFile << "\t\"Alignment\":\"" << result.getAlignment()
-					<< "\",\n";
-			outputFile << "\t\"SubjectStart\":\"" << result.getSubjectStart()
-					<< "\",\n";
-			outputFile << "\t\"Subject\":\"" << result.getSubject() << "\",\n";
-			outputFile << "\t\"SubjectEnd\":\"" << result.getSubjectEnd()
-					<< "\"\n";
-			outputFile << "},\n";
+			BLAPDBResultVector.push_back(result);
 			counter++;
 			//then update the information set the first state flag
 			char proteinName[7];
@@ -232,33 +186,56 @@ void BLAPDB2Json::convert() {
 
 	}
 
-	//this case will print out the last protein
-	outputFile << "\"protein" << counter << "\":{\n";
-	outputFile << "\t\"proteinName\":\"" << result.getProteinName() << "\",\n";
-	outputFile << "\t\"Length\":\"" << result.getLength() << "\",\n";
-	outputFile << "\t\"Score\":\"" << result.getScore() << "\",\n";
-	outputFile << "\t\"Expect\":\"" << result.getExpect() << "\",\n";
-	outputFile << "\t\"Identities\":\"" << result.getIdentities() << "\",\n";
-	outputFile << "\t\"Positives\":\"" << result.getPositives() << "\",\n";
-	outputFile << "\t\"Gaps\":\"" << result.getGaps() << "\",\n";
-	outputFile << "\t\"QueyStart\":\"" << result.getQueryStart() << "\",\n";
-	outputFile << "\t\"Query\":\"" << result.getQuery() << "\",\n";
-	outputFile << "\t\"QueryEnd\":\"" << result.getQueryEnd() << "\",\n";
-	outputFile << "\t\"Alignment\":\"" << result.getAlignment() << "\",\n";
-	outputFile << "\t\"SubjectStart\":\"" << result.getSubjectStart()
-			<< "\",\n";
-	outputFile << "\t\"Subject\":\"" << result.getSubject() << "\",\n";
-	outputFile << "\t\"SubjectEnd\":\"" << result.getSubjectEnd() << "\"\n";
-	outputFile << "},\n";
+	BLAPDBResultVector.push_back(result);
 
-	//print the finishing line
+	fclose(fptr);
+
+
+}
+
+void BLAPDB2Json::write2JsonFile() {
+	ofstream outputFile(outputJsonFilename);
+	outputFile << "{" << "\n";
+
+	for (int i = 0; i < BLAPDBResultVector.size(); i++) {
+		outputFile << "\"protein" << i << "\":{\n";
+		outputFile << "\t\"proteinName\":\""
+				<< BLAPDBResultVector[i].getProteinName() << "\",\n";
+		outputFile << "\t\"Length\":\"" << BLAPDBResultVector[i].getLength()
+				<< "\",\n";
+		outputFile << "\t\"Score\":\"" << BLAPDBResultVector[i].getScore()
+				<< "\",\n";
+		outputFile << "\t\"Expect\":\"" << BLAPDBResultVector[i].getExpect()
+				<< "\",\n";
+		outputFile << "\t\"Identities\":\""
+				<< BLAPDBResultVector[i].getIdentities() << "\",\n";
+		outputFile << "\t\"Positives\":\""
+				<< BLAPDBResultVector[i].getPositives() << "\",\n";
+		outputFile << "\t\"Gaps\":\"" << BLAPDBResultVector[i].getGaps()
+				<< "\",\n";
+		outputFile << "\t\"QueyStart\":\""
+				<< BLAPDBResultVector[i].getQueryStart() << "\",\n";
+		outputFile << "\t\"Query\":\"" << BLAPDBResultVector[i].getQuery()
+				<< "\",\n";
+		outputFile << "\t\"QueryEnd\":\"" << BLAPDBResultVector[i].getQueryEnd()
+				<< "\",\n";
+		outputFile << "\t\"Alignment\":\""
+				<< BLAPDBResultVector[i].getAlignment() << "\",\n";
+		outputFile << "\t\"SubjectStart\":\""
+				<< BLAPDBResultVector[i].getSubjectStart() << "\",\n";
+		outputFile << "\t\"Subject\":\"" << BLAPDBResultVector[i].getSubject()
+				<< "\",\n";
+		outputFile << "\t\"SubjectEnd\":\""
+				<< BLAPDBResultVector[i].getSubjectEnd() << "\"\n";
+		outputFile << "},\n";
+	}
 	outputFile << "\"finish\":\"end\"" << "\n";
 	outputFile << "}" << "\n";
-	fclose(fptr);
-	outputFile.close();
 
+	outputFile.close();
 }
 BLAPDB2Json::~BLAPDB2Json() {
 	// TODO Auto-generated destructor stub
 }
+
 
