@@ -12,15 +12,22 @@
 #include <iostream>
 #include <fstream>
 #include <string.h>
-#include "ConvertTools.h"
+
 #include "BLANRResult.h"
+#include "ConvertTools.h"
+#include <vector>
 using namespace std;
 class BLANR2Json: public ConvertTools {
 public:
 	BLANR2Json(char*,char*);
 	void convert();
+	void write2JsonFile();
 
 	virtual ~BLANR2Json();
+
+
+private:
+	vector<BLANRResult> BLANRResultVector;
 };
 
 #endif /* BLANR2JSON_H_ */

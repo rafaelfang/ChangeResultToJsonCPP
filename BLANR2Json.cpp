@@ -15,11 +15,11 @@ void BLANR2Json::convert() {
 
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	FILE* fptr = fopen(inputFilename, "r");
-	ofstream outputFile(outputJsonFilename);
+
 	char line[500];
 	int counter = 1;
-	BlaNRResult result;
-	outputFile << "{\n";
+	BLANRResult result;
+
 	while (fgets(line, 500, fptr) != NULL) {
 		if ((strstr(line, ">") != NULL) && !result.isFirstStateReached()) {
 			//set first block information
@@ -126,30 +126,8 @@ void BLANR2Json::convert() {
 				&& result.isSecondStateReached()) {
 
 			//first write the protein information to json
-			outputFile << "\"protein" << counter << "\":{\n";
-			outputFile << "\t\"proteinName\":\"" << result.getProteinName()
-					<< "\",\n";
-			outputFile << "\t\"Length\":\"" << result.getLength() << "\",\n";
-			outputFile << "\t\"Score\":\"" << result.getScore() << "\",\n";
-			outputFile << "\t\"Expect\":\"" << result.getExpect() << "\",\n";
-			outputFile << "\t\"Identities\":\"" << result.getIdentities()
-					<< "\",\n";
-			outputFile << "\t\"Positives\":\"" << result.getPositives()
-					<< "\",\n";
-			outputFile << "\t\"Gaps\":\"" << result.getGaps() << "\",\n";
-			outputFile << "\t\"QueyStart\":\"" << result.getQueryStart()
-					<< "\",\n";
-			outputFile << "\t\"Query\":\"" << result.getQuery() << "\",\n";
-			outputFile << "\t\"QueryEnd\":\"" << result.getQueryEnd()
-					<< "\",\n";
-			outputFile << "\t\"Alignment\":\"" << result.getAlignment()
-					<< "\",\n";
-			outputFile << "\t\"SubjectStart\":\"" << result.getSubjectStart()
-					<< "\",\n";
-			outputFile << "\t\"Subject\":\"" << result.getSubject() << "\",\n";
-			outputFile << "\t\"SubjectEnd\":\"" << result.getSubjectEnd()
-					<< "\"\n";
-			outputFile << "},\n";
+
+			BLANRResultVector.push_back(result);
 			counter++;
 			//then update the information and set the second state flag
 			float score;
@@ -186,31 +164,7 @@ void BLANR2Json::convert() {
 		}
 		if ((strstr(line, ">") != NULL) && result.isFirstStateReached()) {
 
-			//first write the protein information to json
-			outputFile << "\"protein" << counter << "\":{\n";
-			outputFile << "\t\"proteinName\":\"" << result.getProteinName()
-					<< "\",\n";
-			outputFile << "\t\"Length\":\"" << result.getLength() << "\",\n";
-			outputFile << "\t\"Score\":\"" << result.getScore() << "\",\n";
-			outputFile << "\t\"Expect\":\"" << result.getExpect() << "\",\n";
-			outputFile << "\t\"Identities\":\"" << result.getIdentities()
-					<< "\",\n";
-			outputFile << "\t\"Positives\":\"" << result.getPositives()
-					<< "\",\n";
-			outputFile << "\t\"Gaps\":\"" << result.getGaps() << "\",\n";
-			outputFile << "\t\"QueyStart\":\"" << result.getQueryStart()
-					<< "\",\n";
-			outputFile << "\t\"Query\":\"" << result.getQuery() << "\",\n";
-			outputFile << "\t\"QueryEnd\":\"" << result.getQueryEnd()
-					<< "\",\n";
-			outputFile << "\t\"Alignment\":\"" << result.getAlignment()
-					<< "\",\n";
-			outputFile << "\t\"SubjectStart\":\"" << result.getSubjectStart()
-					<< "\",\n";
-			outputFile << "\t\"Subject\":\"" << result.getSubject() << "\",\n";
-			outputFile << "\t\"SubjectEnd\":\"" << result.getSubjectEnd()
-					<< "\"\n";
-			outputFile << "},\n";
+			BLANRResultVector.push_back(result);
 			counter++;
 			//then update the information set the first state flag
 			char proteinName[7];
@@ -232,34 +186,53 @@ void BLANR2Json::convert() {
 
 	}
 
-	//this case will print out the last protein
-	outputFile << "\"protein" << counter << "\":{\n";
-	outputFile << "\t\"proteinName\":\"" << result.getProteinName() << "\",\n";
-	outputFile << "\t\"Length\":\"" << result.getLength() << "\",\n";
-	outputFile << "\t\"Score\":\"" << result.getScore() << "\",\n";
-	outputFile << "\t\"Expect\":\"" << result.getExpect() << "\",\n";
-	outputFile << "\t\"Identities\":\"" << result.getIdentities() << "\",\n";
-	outputFile << "\t\"Positives\":\"" << result.getPositives() << "\",\n";
-	outputFile << "\t\"Gaps\":\"" << result.getGaps() << "\",\n";
-	outputFile << "\t\"QueyStart\":\"" << result.getQueryStart() << "\",\n";
-	outputFile << "\t\"Query\":\"" << result.getQuery() << "\",\n";
-	outputFile << "\t\"QueryEnd\":\"" << result.getQueryEnd() << "\",\n";
-	outputFile << "\t\"Alignment\":\"" << result.getAlignment() << "\",\n";
-	outputFile << "\t\"SubjectStart\":\"" << result.getSubjectStart()
-			<< "\",\n";
-	outputFile << "\t\"Subject\":\"" << result.getSubject() << "\",\n";
-	outputFile << "\t\"SubjectEnd\":\"" << result.getSubjectEnd() << "\"\n";
-	outputFile << "},\n";
-
-	//print the finishing line
-	outputFile << "\"finish\":\"end\"" << "\n";
-	outputFile << "}" << "\n";
+	BLANRResultVector.push_back(result);
 	fclose(fptr);
-	outputFile.close();
 
 }
+void BLANR2Json::write2JsonFile() {
+	ofstream outputFile(outputJsonFilename);
+	outputFile << "{" << "\n";
 
+	for (int i = 0; i < BLANRResultVector.size(); i++) {
+		outputFile << "\"protein" << i << "\":{\n";
+		outputFile << "\t\"proteinName\":\""
+				<< BLANRResultVector[i].getProteinName() << "\",\n";
+		outputFile << "\t\"Length\":\"" << BLANRResultVector[i].getLength()
+				<< "\",\n";
+		outputFile << "\t\"Score\":\"" << BLANRResultVector[i].getScore()
+				<< "\",\n";
+		outputFile << "\t\"Expect\":\"" << BLANRResultVector[i].getExpect()
+				<< "\",\n";
+		outputFile << "\t\"Identities\":\""
+				<< BLANRResultVector[i].getIdentities() << "\",\n";
+		outputFile << "\t\"Positives\":\""
+				<< BLANRResultVector[i].getPositives() << "\",\n";
+		outputFile << "\t\"Gaps\":\"" << BLANRResultVector[i].getGaps()
+				<< "\",\n";
+		outputFile << "\t\"QueyStart\":\""
+				<< BLANRResultVector[i].getQueryStart() << "\",\n";
+		outputFile << "\t\"Query\":\"" << BLANRResultVector[i].getQuery()
+				<< "\",\n";
+		outputFile << "\t\"QueryEnd\":\"" << BLANRResultVector[i].getQueryEnd()
+				<< "\",\n";
+		outputFile << "\t\"Alignment\":\""
+				<< BLANRResultVector[i].getAlignment() << "\",\n";
+		outputFile << "\t\"SubjectStart\":\""
+				<< BLANRResultVector[i].getSubjectStart() << "\",\n";
+		outputFile << "\t\"Subject\":\"" << BLANRResultVector[i].getSubject()
+				<< "\",\n";
+		outputFile << "\t\"SubjectEnd\":\""
+				<< BLANRResultVector[i].getSubjectEnd() << "\"\n";
+		outputFile << "},\n";
+	}
+	outputFile << "\"finish\":\"end\"" << "\n";
+	outputFile << "}" << "\n";
+
+	outputFile.close();
+}
 BLANR2Json::~BLANR2Json() {
 	// TODO Auto-generated destructor stub
 }
+
 
