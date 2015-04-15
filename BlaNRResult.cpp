@@ -5,147 +5,147 @@
  *      Author: Chao
  */
 
-#include "BlaNRResult.h"
+#include "BLANRResult.h"
 
-BlaNRResult::BlaNRResult() {
+BLANRResult::BLANRResult() {
 
 }
-string& BlaNRResult::getAlignment() {
+string& BLANRResult::getAlignment() {
 	return alignment;
 }
 
-void BlaNRResult::setAlignment(string& alignment) {
+void BLANRResult::setAlignment(string& alignment) {
 	this->alignment = alignment;
 }
 
-float BlaNRResult::getExpect() {
+float BLANRResult::getExpect() {
 	return expect;
 }
 
-void BlaNRResult::setExpect(float expect) {
+void BLANRResult::setExpect(float expect) {
 	this->expect = expect;
 }
 
-bool BlaNRResult::isFirstStateReached() {
+bool BLANRResult::isFirstStateReached() {
 	return firstStateReached;
 }
 
-void BlaNRResult::setFirstStateReached(bool firstStateReached = false) {
+void BLANRResult::setFirstStateReached(bool firstStateReached = false) {
 	this->firstStateReached = firstStateReached;
 }
 
-int BlaNRResult::getGaps() {
+int BLANRResult::getGaps() {
 	return gaps;
 }
 
-void BlaNRResult::setGaps(int gaps) {
+void BLANRResult::setGaps(int gaps) {
 	this->gaps = gaps;
 }
 
-int BlaNRResult::getIdentities() {
+int BLANRResult::getIdentities() {
 	return identities;
 }
 
-void BlaNRResult::setIdentities(int identities) {
+void BLANRResult::setIdentities(int identities) {
 	this->identities = identities;
 }
 
-int BlaNRResult::getLength() {
+int BLANRResult::getLength() {
 	return length;
 }
 
-void BlaNRResult::setLength(int length) {
+void BLANRResult::setLength(int length) {
 	this->length = length;
 }
 
-int BlaNRResult::getPositives() {
+int BLANRResult::getPositives() {
 	return positives;
 }
 
-void BlaNRResult::setPositives(int positives) {
+void BLANRResult::setPositives(int positives) {
 	this->positives = positives;
 }
 
-string& BlaNRResult::getProteinName() {
+string& BLANRResult::getProteinName() {
 	return proteinName;
 }
 
-void BlaNRResult::setProteinName(string& proteinName) {
+void BLANRResult::setProteinName(string& proteinName) {
 	this->proteinName = proteinName;
 }
 
-string& BlaNRResult::getQuery() {
+string& BLANRResult::getQuery() {
 	return query;
 }
 
-void BlaNRResult::setQuery(string& query) {
+void BLANRResult::setQuery(string& query) {
 	this->query = query;
 }
 
-int BlaNRResult::getQueryEnd() {
+int BLANRResult::getQueryEnd() {
 	return queryEnd;
 }
 
-void BlaNRResult::setQueryEnd(int queryEnd) {
+void BLANRResult::setQueryEnd(int queryEnd) {
 	this->queryEnd = queryEnd;
 }
 
-int BlaNRResult::getQueryStart() {
+int BLANRResult::getQueryStart() {
 	return queryStart;
 }
 
-void BlaNRResult::setQueryStart(int queryStart) {
+void BLANRResult::setQueryStart(int queryStart) {
 	this->queryStart = queryStart;
 }
 
-float BlaNRResult::getScore() {
+float BLANRResult::getScore() {
 	return score;
 }
 
-void BlaNRResult::setScore(float score) {
+void BLANRResult::setScore(float score) {
 	this->score = score;
 }
 
-bool BlaNRResult::isSecondStateReached() {
+bool BLANRResult::isSecondStateReached() {
 	return secondStateReached;
 }
 
-void BlaNRResult::setSecondStateReached(bool secondStateReached = false) {
+void BLANRResult::setSecondStateReached(bool secondStateReached = false) {
 	this->secondStateReached = secondStateReached;
 }
 
-string& BlaNRResult::getSubject() {
+string& BLANRResult::getSubject() {
 	return subject;
 }
 
-void BlaNRResult::setSubject(string& subject) {
+void BLANRResult::setSubject(string& subject) {
 	this->subject = subject;
 }
 
-int BlaNRResult::getSubjectEnd() {
+int BLANRResult::getSubjectEnd() {
 	return subjectEnd;
 }
 
-void BlaNRResult::setSubjectEnd(int subjectEnd) {
+void BLANRResult::setSubjectEnd(int subjectEnd) {
 	this->subjectEnd = subjectEnd;
 }
 
-int BlaNRResult::getSubjectStart() {
+int BLANRResult::getSubjectStart() {
 	return subjectStart;
 }
 
-void BlaNRResult::setSubjectStart(int subjectStart) {
+void BLANRResult::setSubjectStart(int subjectStart) {
 	this->subjectStart = subjectStart;
 }
 
-bool BlaNRResult::isThirdStateReached() {
+bool BLANRResult::isThirdStateReached() {
 	return thirdStateReached;
 }
 
-void BlaNRResult::setThirdStateReached(bool thirdStateReached = false) {
+void BLANRResult::setThirdStateReached(bool thirdStateReached = false) {
 	this->thirdStateReached = thirdStateReached;
 }
-BlaNRResult::~BlaNRResult() {
+BLANRResult::~BLANRResult() {
 	// TODO Auto-generated destructor stub
 }
 

@@ -14,11 +14,11 @@
 #include <string.h>
 
 using namespace std;
-class BlaNRResult {
+class BLANRResult {
 public:
-	BlaNRResult();
+	BLANRResult();
 
-	virtual ~BlaNRResult();
+	virtual ~BLANRResult();
 	string& getAlignment();
 	void setAlignment(string& alignment);
 	float getExpect();
