@@ -1,5 +1,5 @@
 {
-"protein1":{
+"protein0":{
 	"proteinName":"1ESL_A",
 	"Length":"162",
 	"Score":"30.8",
@@ -17,7 +17,7 @@
 	"Subject":"EEIEYLNSILSYSPSYYWIGIRKVNNV-------WVWV-------GTQKPLTEEAKNWAPGEPNNRQKD",
 	"SubjectEnd":"87"
 },
-"protein2":{
+"protein1":{
 	"proteinName":"2BAS_B",
 	"Length":"431",
 	"Score":"26.6",
@@ -34,7 +34,7 @@
 	"Subject":"NVFK--QDGEWIYQPEYAE-----------KNWSWRPYFLENIMRMRNL",
 	"SubjectEnd":"384"
 },
-"protein3":{
+"protein2":{
 	"proteinName":"2BAS_B",
 	"Length":"431",
 	"Score":"20",
@@ -51,7 +51,7 @@
 	"Subject":"LKEYEAKGIELHRFVLEITEHNF",
 	"SubjectEnd":"152"
 },
-"protein4":{
+"protein3":{
 	"proteinName":"2BAS_B",
 	"Length":"431",
 	"Score":"15.4",
@@ -68,7 +68,7 @@
 	"Subject":"GKESSNLDRIALLSPDLLKIDLQALKVS",
 	"SubjectEnd":"206"
 },
-"protein5":{
+"protein4":{
 	"proteinName":"1G1T_A",
 	"Length":"157",
 	"Score":"30.4",
