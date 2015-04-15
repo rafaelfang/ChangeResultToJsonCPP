@@ -55,6 +55,8 @@ public:
 	void setTargetEnd(int targetEnd);
 	int getTargetStart();
 	void setTargetStart(int targetStart);
+	 string& getQuerySsPred() ;
+	void setQuerySsPred( string& querySsPred);
 
 private:
 
@@ -66,7 +68,7 @@ private:
 	int identities;
 	int similarities;
 	float sum_probs;
-
+	string query_ss_pred;
 	int queryStart;
 	string query;
 	int queryEnd;

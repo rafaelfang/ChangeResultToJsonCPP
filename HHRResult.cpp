@@ -167,3 +167,11 @@ int HHRResult::getTargetStart() {
 void HHRResult::setTargetStart(int targetStart) {
 	this->targetStart = targetStart;
 }
+
+string& HHRResult::getQuerySsPred() {
+	return query_ss_pred;
+}
+
+void HHRResult::setQuerySsPred(string& querySsPred) {
+	query_ss_pred = querySsPred;
+}
