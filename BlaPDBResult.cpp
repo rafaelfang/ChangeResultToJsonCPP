@@ -5,149 +5,149 @@
  *      Author: Chao
  */
 
-#include "BlaPDBResult.h"
+#include "BLAPDBResult.h"
 
-BlaPDBResult::BlaPDBResult() {
+BLAPDBResult::BLAPDBResult() {
 	// TODO Auto-generated ructor stub
 
 }
 
-BlaPDBResult::~BlaPDBResult() {
+BLAPDBResult::~BLAPDBResult() {
 	// TODO Auto-generated destructor stub
 }
 
-string& BlaPDBResult::getAlignment() {
+string& BLAPDBResult::getAlignment() {
 	return alignment;
 }
 
-void BlaPDBResult::setAlignment(string& alignment) {
+void BLAPDBResult::setAlignment(string& alignment) {
 	this->alignment = alignment;
 }
 
-float BlaPDBResult::getExpect() {
+float BLAPDBResult::getExpect() {
 	return expect;
 }
 
-void BlaPDBResult::setExpect(float expect) {
+void BLAPDBResult::setExpect(float expect) {
 	this->expect = expect;
 }
 
-bool BlaPDBResult::isFirstStateReached() {
+bool BLAPDBResult::isFirstStateReached() {
 	return firstStateReached;
 }
 
-void BlaPDBResult::setFirstStateReached(bool firstStateReached = false) {
+void BLAPDBResult::setFirstStateReached(bool firstStateReached = false) {
 	this->firstStateReached = firstStateReached;
 }
 
-int BlaPDBResult::getGaps() {
+int BLAPDBResult::getGaps() {
 	return gaps;
 }
 
-void BlaPDBResult::setGaps(int gaps) {
+void BLAPDBResult::setGaps(int gaps) {
 	this->gaps = gaps;
 }
 
-int BlaPDBResult::getIdentities() {
+int BLAPDBResult::getIdentities() {
 	return identities;
 }
 
-void BlaPDBResult::setIdentities(int identities) {
+void BLAPDBResult::setIdentities(int identities) {
 	this->identities = identities;
 }
 
-int BlaPDBResult::getLength() {
+int BLAPDBResult::getLength() {
 	return length;
 }
 
-void BlaPDBResult::setLength(int length) {
+void BLAPDBResult::setLength(int length) {
 	this->length = length;
 }
 
-int BlaPDBResult::getPositives() {
+int BLAPDBResult::getPositives() {
 	return positives;
 }
 
-void BlaPDBResult::setPositives(int positives) {
+void BLAPDBResult::setPositives(int positives) {
 	this->positives = positives;
 }
 
-string& BlaPDBResult::getProteinName() {
+string& BLAPDBResult::getProteinName() {
 	return proteinName;
 }
 
-void BlaPDBResult::setProteinName(string& proteinName) {
+void BLAPDBResult::setProteinName(string& proteinName) {
 	this->proteinName = proteinName;
 }
 
-string& BlaPDBResult::getQuery() {
+string& BLAPDBResult::getQuery() {
 	return query;
 }
 
-void BlaPDBResult::setQuery(string& query) {
+void BLAPDBResult::setQuery(string& query) {
 	this->query = query;
 }
 
-int BlaPDBResult::getQueryEnd() {
+int BLAPDBResult::getQueryEnd() {
 	return queryEnd;
 }
 
-void BlaPDBResult::setQueryEnd(int queryEnd) {
+void BLAPDBResult::setQueryEnd(int queryEnd) {
 	this->queryEnd = queryEnd;
 }
 
-int BlaPDBResult::getQueryStart() {
+int BLAPDBResult::getQueryStart() {
 	return queryStart;
 }
 
-void BlaPDBResult::setQueryStart(int queryStart) {
+void BLAPDBResult::setQueryStart(int queryStart) {
 	this->queryStart = queryStart;
 }
 
-float BlaPDBResult::getScore() {
+float BLAPDBResult::getScore() {
 	return score;
 }
 
-void BlaPDBResult::setScore(float score) {
+void BLAPDBResult::setScore(float score) {
 	this->score = score;
 }
 
-bool BlaPDBResult::isSecondStateReached() {
+bool BLAPDBResult::isSecondStateReached() {
 	return secondStateReached;
 }
 
-void BlaPDBResult::setSecondStateReached(bool secondStateReached = false) {
+void BLAPDBResult::setSecondStateReached(bool secondStateReached = false) {
 	this->secondStateReached = secondStateReached;
 }
 
-string& BlaPDBResult::getSubject() {
+string& BLAPDBResult::getSubject() {
 	return subject;
 }
 
-void BlaPDBResult::setSubject(string& subject) {
+void BLAPDBResult::setSubject(string& subject) {
 	this->subject = subject;
 }
 
-int BlaPDBResult::getSubjectEnd() {
+int BLAPDBResult::getSubjectEnd() {
 	return subjectEnd;
 }
 
-void BlaPDBResult::setSubjectEnd(int subjectEnd) {
+void BLAPDBResult::setSubjectEnd(int subjectEnd) {
 	this->subjectEnd = subjectEnd;
 }
 
-int BlaPDBResult::getSubjectStart() {
+int BLAPDBResult::getSubjectStart() {
 	return subjectStart;
 }
 
-void BlaPDBResult::setSubjectStart(int subjectStart) {
+void BLAPDBResult::setSubjectStart(int subjectStart) {
 	this->subjectStart = subjectStart;
 }
 
-bool BlaPDBResult::isThirdStateReached() {
+bool BLAPDBResult::isThirdStateReached() {
 	return thirdStateReached;
 }
 
-void BlaPDBResult::setThirdStateReached(bool thirdStateReached = false) {
+void BLAPDBResult::setThirdStateReached(bool thirdStateReached = false) {
 	this->thirdStateReached = thirdStateReached;
 }

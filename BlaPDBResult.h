@@ -14,10 +14,10 @@
 #include <string.h>
 
 using namespace std;
-class BlaPDBResult {
+class BLAPDBResult {
 public:
-	BlaPDBResult();
-	virtual ~BlaPDBResult();
+	BLAPDBResult();
+	virtual ~BLAPDBResult();
 	string& getAlignment();
 	void setAlignment(string& alignment);
 	float getExpect();
