@@ -16,9 +16,9 @@ void HHR2Json::convert() {
 	char line[500];
 	int counter = 0;
 	FILE* inputFile = fopen(inputFilename, "r");
-	ofstream outputFile(outputJsonFilename);
+	//ofstream outputFile(outputJsonFilename);
 	HHRResult result;
-	outputFile << "{" << "\n";
+	//outputFile << "{" << "\n";
 	while (fgets(line, 200, inputFile) != NULL) {
 
 		if (strstr(line, ">") != NULL) {
@@ -28,9 +28,7 @@ void HHR2Json::convert() {
 			sscanf(pos1 + 1, "%s", proteinName);
 			string proteinNameStr(proteinName);
 			result.setProteinName(proteinNameStr);
-			outputFile << "\"protein" << counter << "\":{\n";
-			outputFile << "\t\"proteinName\":\"" << result.getProteinName()
-					<< "\",\n";
+
 			while (strstr(line, "Probab=") == NULL) {
 				fgets(line, 500, inputFile); //skip long name
 			}
@@ -41,51 +39,45 @@ void HHR2Json::convert() {
 			float probab;
 			sscanf(pos1 + 1, "%f", &probab);
 			result.setProbab(probab);
-			outputFile << "\t\"probab\":\"" << result.getProbab() << "\",\n";
 
 			char* pos2 = strstr(pos1 + 1, "=");
 			float eValue;
 			sscanf(pos2 + 1, "%f", &eValue);
 			result.setExpect(eValue);
-			outputFile << "\t\"eValue\":\"" << result.getExpect() << "\",\n";
 
 			char* pos3 = strstr(pos2 + 1, "=");
 			float score;
 			sscanf(pos3 + 1, "%f", &score);
 			result.setScore(score);
-			outputFile << "\t\"score\":\"" << result.getScore() << "\",\n";
 
 			char* pos4 = strstr(pos3 + 1, "=");
 			int alignedCols;
 			sscanf(pos4 + 1, "%d", &alignedCols);
 			result.setAlignedCols(alignedCols);
-			outputFile << "\t\"alignedCols\":\"" << result.getAlignedCols()
-					<< "\",\n";
 
 			char* pos5 = strstr(pos4 + 1, "=");
 			float identities;
 			sscanf(pos5 + 1, "%f", &identities);
 			result.setIdentities(identities);
-			outputFile << "\t\"identities\":\"" << result.getIdentities()
-					<< "\",\n";
 
 			char* pos6 = strstr(pos5 + 1, "=");
 			float similarity;
 			sscanf(pos6 + 1, "%f", &similarity);
 			result.setSimilarities(similarity);
-			outputFile << "\t\"similarity\":\"" << result.getSimilarities()
-					<< "\",\n";
 
 			char* pos7 = strstr(pos6 + 1, "=");
 			float sumProbs;
 			sscanf(pos7 + 1, "%f", &sumProbs);
 			result.setSumProbs(sumProbs);
-			outputFile << "\t\"sumProbs\":\"" << result.getSumProbs()
-					<< "\",\n";
 
 			fgets(line, 200, inputFile); //blank
 
 			//get the query
+			fgets(line, 200, inputFile);
+			char query_ss_pred[100];
+			sscanf(line + 17, "%s", query_ss_pred);
+			string strQuery_ss_pred(query_ss_pred);
+			result.setQuerySsPred(strQuery_ss_pred);
 
 			fgets(line, 200, inputFile);
 			int queryStart;
@@ -96,9 +88,6 @@ void HHR2Json::convert() {
 			string strQuery(query);
 			result.setQuery(strQuery);
 			result.setQueryEnd(queryEnd);
-			outputFile << "\t\"QueryStart\":\"" << queryStart << "\",\n";
-			outputFile << "\t\"Query\":\"" << query << "\",\n";
-			outputFile << "\t\"QueryEnd\":\"" << queryEnd << "\",\n";
 
 			//get the Q Consensus
 			fgets(line, 200, inputFile);
@@ -110,17 +99,12 @@ void HHR2Json::convert() {
 			string strQConsensus(QConsensus);
 			result.setQueryConsensus(strQConsensus);
 
-			outputFile << "\t\"QueryConsensus\":\""
-					<< result.getQueryConsensus() << "\",\n";
-
 			//get alignment
 			fgets(line, 200, inputFile);
 			char alignment[100];
 			sscanf(line + 17, "%s", alignment);
 			string strAlignment(alignment);
 			result.setAlignment(strAlignment);
-			outputFile << "\t\"alignment\":\"" << result.getAlignment()
-					<< "\",\n";
 
 			//get the T Consensus
 			fgets(line, 200, inputFile);
@@ -134,13 +118,6 @@ void HHR2Json::convert() {
 			result.setTargetConsensus(strTargetConsensus);
 			result.setTargetEnd(targetEnd);
 
-			outputFile << "\t\"TargetStart\":\"" << result.getTargetStart()
-					<< "\",\n";
-			outputFile << "\t\"TargetConsensus\":\""
-					<< result.getTargetConsensus() << "\",\n";
-			outputFile << "\t\"TargetEnd\":\"" << result.getTargetEnd()
-					<< "\",\n";
-
 			//get the Target
 			fgets(line, 200, inputFile);
 
@@ -149,7 +126,6 @@ void HHR2Json::convert() {
 			sscanf(line + 17, "%d %s %d", &targetStart, target, &targetEnd);
 			string strTarget(target);
 			result.setTarget(strTarget);
-			outputFile << "\t\"target\":\"" << result.getTarget() << "\",\n";
 
 			//get the TPred
 			fgets(line, 200, inputFile);
@@ -157,18 +133,65 @@ void HHR2Json::convert() {
 			sscanf(line + 17, "%s", tPred);
 			string strTPred(tPred);
 			result.setTargetSsPred(strTPred);
-			outputFile << "\t\"tPred\":\"" << result.getTargetSsPred()
-					<< "\"\n";
 
-			outputFile << "},\n";
 			counter++;
+			HHRResultVector.push_back(result);
 		}
+	}
+
+	fclose(inputFile);
+
+}
+
+void HHR2Json::write2JsonFile() {
+	ofstream outputFile(outputJsonFilename);
+	outputFile << "{" << "\n";
+	for (int i = 0; i < HHRResultVector.size(); i++) {
+		outputFile << "\"protein" << i << "\":{\n";
+		outputFile << "\t\"proteinName\":\""
+				<< HHRResultVector[i].getProteinName() << "\",\n";
+		outputFile << "\t\"probab\":\"" << HHRResultVector[i].getProbab()
+				<< "\",\n";
+		outputFile << "\t\"eValue\":\"" << HHRResultVector[i].getExpect()
+				<< "\",\n";
+		outputFile << "\t\"score\":\"" << HHRResultVector[i].getScore()
+				<< "\",\n";
+		outputFile << "\t\"alignedCols\":\""
+				<< HHRResultVector[i].getAlignedCols() << "\",\n";
+		outputFile << "\t\"identities\":\""
+				<< HHRResultVector[i].getIdentities() << "\",\n";
+		outputFile << "\t\"similarity\":\""
+				<< HHRResultVector[i].getSimilarities() << "\",\n";
+		outputFile << "\t\"sumProbs\":\"" << HHRResultVector[i].getSumProbs()
+				<< "\",\n";
+		outputFile << "\t\"QuerySSPred\":\""
+				<< HHRResultVector[i].getQuerySsPred() << "\",\n";
+		outputFile << "\t\"QueryStart\":\""
+				<< HHRResultVector[i].getQueryStart() << "\",\n";
+		outputFile << "\t\"Query\":\"" << HHRResultVector[i].getQuery()
+				<< "\",\n";
+		outputFile << "\t\"QueryEnd\":\"" << HHRResultVector[i].getQueryEnd()
+				<< "\",\n";
+		outputFile << "\t\"QueryConsensus\":\""
+				<< HHRResultVector[i].getQueryConsensus() << "\",\n";
+		outputFile << "\t\"alignment\":\"" << HHRResultVector[i].getAlignment()
+				<< "\",\n";
+		outputFile << "\t\"TargetStart\":\""
+				<< HHRResultVector[i].getTargetStart() << "\",\n";
+		outputFile << "\t\"TargetConsensus\":\""
+				<< HHRResultVector[i].getTargetConsensus() << "\",\n";
+		outputFile << "\t\"TargetEnd\":\"" << HHRResultVector[i].getTargetEnd()
+				<< "\",\n";
+		outputFile << "\t\"target\":\"" << HHRResultVector[i].getTarget()
+				<< "\",\n";
+		outputFile << "\t\"tPred\":\"" << HHRResultVector[i].getTargetSsPred()
+				<< "\"\n";
+		outputFile << "},\n";
 	}
 	outputFile << "\"finish\":\"end\"" << "\n";
 	outputFile << "}" << "\n";
-	fclose(inputFile);
-	outputFile.close();
 
+	outputFile.close();
 }
 
 HHR2Json::~HHR2Json() {
