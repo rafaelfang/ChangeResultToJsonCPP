@@ -6,20 +6,28 @@
  */
 
 #include "BLAPDB2Json.h"
-
+#include "Utility.h"
 BLAPDB2Json::BLAPDB2Json(char* inFilename, char* outFilename) :
 		ConvertTools(inFilename, outFilename) {
 
 }
 void BLAPDB2Json::convert() {
 
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-	FILE* fptr = fopen(inputFilename, "r");
-	ofstream outputFile(outputJsonFilename);
 	char line[500];
-	int counter = 1;
+	int counter = 0;
+	string inFilename(inputFileLocation);
+	inFilename += inputFilename;
+
+	FILE* fptr = fopen((char*) inFilename.c_str(), "r");
+	if (fptr == NULL) {
+		cout << "input file: " << inFilename << " can't open" << endl;
+	}
+
+
+	Utility utility;
+
 	BLAPDBResult result;
-	outputFile << "{\n";
+
 	while (fgets(line, 500, fptr) != NULL) {
 		if ((strstr(line, ">") != NULL) && !result.isFirstStateReached()) {
 			//set first block information
@@ -126,6 +134,12 @@ void BLAPDB2Json::convert() {
 				&& result.isSecondStateReached()) {
 
 			//first write the protein information to json
+			string searchDBFilename(DBInfoLocation);
+			searchDBFilename += result.getProteinName();
+			searchDBFilename += ".db";
+			utility.find3DCorrds((char*) searchDBFilename.c_str(),
+					coordsOutputFileLocation, result.getProteinName(),
+					result.getSubject(), result.getSubjectStart());
 			BLAPDBResultVector.push_back(result);
 			counter++;
 			//then update the information and set the second state flag
@@ -164,6 +178,12 @@ void BLAPDB2Json::convert() {
 		if ((strstr(line, ">") != NULL) && result.isFirstStateReached()) {
 
 			//first write the protein information to json
+			string searchDBFilename(DBInfoLocation);
+			searchDBFilename += result.getProteinName();
+			searchDBFilename += ".db";
+			utility.find3DCorrds((char*) searchDBFilename.c_str(),
+					coordsOutputFileLocation, result.getProteinName(),
+					result.getSubject(), result.getSubjectStart());
 			BLAPDBResultVector.push_back(result);
 			counter++;
 			//then update the information set the first state flag
@@ -185,16 +205,25 @@ void BLAPDB2Json::convert() {
 		}
 
 	}
+	string searchDBFilename(DBInfoLocation);
+	searchDBFilename += result.getProteinName();
+	searchDBFilename += ".db";
+	utility.find3DCorrds((char*) searchDBFilename.c_str(),
+			coordsOutputFileLocation, result.getProteinName(),
+			result.getSubject(), result.getSubjectStart());
 
 	BLAPDBResultVector.push_back(result);
 
 	fclose(fptr);
 
-
 }
 
-void BLAPDB2Json::write2JsonFile() {
-	ofstream outputFile(outputJsonFilename);
+void BLAPDB2Json::writeAlignmentResults2JsonFile() {
+	string outFilename(outputFileLocation);
+	outFilename += outputJsonFilename;
+
+	ofstream outputFile(outFilename.c_str());
+
 	outputFile << "{" << "\n";
 
 	for (int i = 0; i < BLAPDBResultVector.size(); i++) {
@@ -237,5 +266,4 @@ void BLAPDB2Json::write2JsonFile() {
 BLAPDB2Json::~BLAPDB2Json() {
 	// TODO Auto-generated destructor stub
 }
-
 

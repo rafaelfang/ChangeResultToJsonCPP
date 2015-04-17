@@ -15,7 +15,7 @@ using namespace std;
 class BLAPDB2Json: public ConvertTools {
 public:
 	BLAPDB2Json(char*, char*);
-	void write2JsonFile();
+	void writeAlignmentResults2JsonFile();
 	void convert();
 	virtual ~BLAPDB2Json();
 
