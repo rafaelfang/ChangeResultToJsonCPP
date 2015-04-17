@@ -21,7 +21,7 @@ class BLANR2Json: public ConvertTools {
 public:
 	BLANR2Json(char*,char*);
 	void convert();
-	void write2JsonFile();
+	void writeAlignmentResults2JsonFile();
 
 	virtual ~BLANR2Json();
 

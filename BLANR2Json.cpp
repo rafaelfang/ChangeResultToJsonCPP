@@ -13,11 +13,15 @@ BLANR2Json::BLANR2Json(char* inFilename, char* outFilename) :
 }
 void BLANR2Json::convert() {
 
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-	FILE* fptr = fopen(inputFilename, "r");
-
 	char line[500];
-	int counter = 1;
+	int counter = 0;
+	string inFilename(inputFileLocation);
+	inFilename += inputFilename;
+
+	FILE* fptr = fopen((char*) inFilename.c_str(), "r");
+	if (fptr == NULL) {
+		cout << "input file: " << inFilename << " can't open" << endl;
+	}
 	BLANRResult result;
 
 	while (fgets(line, 500, fptr) != NULL) {
@@ -190,8 +194,11 @@ void BLANR2Json::convert() {
 	fclose(fptr);
 
 }
-void BLANR2Json::write2JsonFile() {
-	ofstream outputFile(outputJsonFilename);
+void BLANR2Json::writeAlignmentResults2JsonFile() {
+	string outFilename(outputFileLocation);
+	outFilename += outputJsonFilename;
+
+	ofstream outputFile(outFilename.c_str());
 	outputFile << "{" << "\n";
 
 	for (int i = 0; i < BLANRResultVector.size(); i++) {
@@ -234,5 +241,4 @@ void BLANR2Json::write2JsonFile() {
 BLANR2Json::~BLANR2Json() {
 	// TODO Auto-generated destructor stub
 }
-
 
