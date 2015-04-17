@@ -1,0 +1,50 @@
+Query         query
+Match_columns 54
+No_of_seqs    3 out of 11
+Neff          1.3 
+Searched_HMMs 65809
+Date          Fri Feb 13 14:53:42 2015
+Command       /home/lihongb//Tools/hhsearch64/bin/hhsearch -i ./QueryInfo/query.hhm -o ./QueryInfo/query.hhr -d /home/lihongb//DATABASE/HMMDB/MUFOLD_04302014_HHM.hhm -b 50 -glob 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 4HAC_B                          60.2     4.8 7.3E-05   25.7   4.3   53    1-54    192-244 (321)
+  2 2G7Z_A                          23.3      18 0.00027   22.6   1.0   53    1-54    174-248 (282)
+  3 2X7I_A                          22.2      49 0.00075   20.1   3.2   51    1-54    185-235 (308)
+  4 2ZC3_A                          21.5      56 0.00085   19.8   3.4   53    1-54     47-100 (168)
+  5 1VPV_B                          18.9      24 0.00037   21.8   0.8   54    1-54    186-261 (300)
+  6 2HFS_B                          18.5      81  0.0012   19.0   3.6   53    1-54    199-251 (332)
+  7 4IAP_B                          17.9      64 0.00097   19.5   2.9   54    1-54     87-157 (260)
+  8 1K25_A                          16.2   1E+02  0.0015   18.4   3.5   53    1-54     52-110 (685)
+  9 1IXR_C                          16.1      78  0.0012   19.1   2.9   49    1-54    263-312 (312)
+ 10 1QMF_A                          15.9      94  0.0014   18.6   3.3   52    1-54     69-127 (702)
+
+No 1  
+>4HAC_B
+Probab=60.16  E-value=4.8  Score=25.68  Aligned_cols=53  Identities=15%  Similarity=0.265  Sum_probs=45.3
+
+Q ss_pred             CchHHHHHHHHHHhhhhhHHHHHHHHHhccchhhhhhhccCCccHHHHHHhhcC
+Q pdb|T0837         1 SDTRKAIDTISNLLKIKPIYIESMLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL   54 (54)
+Q Consensus         1 sdtrkaidtla~llkikpi~iesmlqemg~r~tq~fir~~~ng~~ee~~kaayl   54 (54)
+                      .+|++++..+..+....|-.++..++++|.+ ++.+++.+.+|..|.+-+--+.
+T Consensus       192 ~sT~~~v~~v~~~~~~~~~~~~~~~~~~~~~-~~~a~~aL~~~d~~~lG~lm~~  244 (321)
+T 4HAC_B          192 SSTKELVANVRQLRESYPDLIEPLMTSIGKI-SRIGEQLVLSGDYASIGRLMNV  244 (321)
+T ss_pred             cCHHHHHHHHHHHHHhCHHHHHHHHHHHHHH-HHHHHHHHhcCChhHHHHHHHh
+Confidence            8899999999999999999999999999876 4558999999988877654433
+
+
+No 2  
+>2G7Z_A
+Probab=23.26  E-value=18  Score=22.55  Aligned_cols=53  Identities=17%  Similarity=0.124  Sum_probs=27.2
+
+Q ss_pred             CchHHHHHHHHHHhhhhhHH-------------------HHH---HHHHhccchhhhhhhccCCccHHHHHHhhcC
+Q pdb|T0837         1 SDTRKAIDTISNLLKIKPIY-------------------IES---MLQEMGPRQTQMFIRSTSNGSAEEVRKAAYL   54 (54)
+Q Consensus         1 sdtrkaidtla~llkikpi~-------------------ies---mlqemg~r~tq~fir~~~ng~~ee~~kaayl   54 (54)
+                      ----++.-.+++||+||||+                   ++-   .+++.+.. ....+-....|..|+..+..-+
+T Consensus       174 GRis~~~a~ig~lL~ikPIl~~~~G~~~~~~K~R~~~ka~~~l~~~~~~~~~~-~~~~i~i~~~~~~e~a~~l~~~  248 (282)
+T 2G7Z_A          174 GRIGRVTGVLSSLLNVKVVMALKNDELKTLVKGRGNKTFTKWLDSYLAKNSHR-PIAEIAISYAGEASLALTLKER  248 (282)
+T ss_pred             CccchhHHHHHhHhceeEEEEEECCEEEEEeeecCHHHHHHHHHHHHHhhcCC-CceEEEEEecCCHHHHHHHHHH
+Confidence            22346677889999999985                   222   22332211 1223444445555655544333
+
+
+
+Done!
