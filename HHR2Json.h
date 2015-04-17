@@ -8,19 +8,22 @@
 #ifndef HHR2JSON_H_
 #define HHR2JSON_H_
 #include "HHRResult.h"
+#include "ThreeDimCoordsResult.h"
 #include "ConvertTools.h"
-#include <vector>
+
+#include "Utility.h"
 using namespace std;
 class HHR2Json: public ConvertTools {
 public:
-	HHR2Json(char*, char*);
+	HHR2Json( char*, char*);
+	void buildDirectory();
 	void convert();
-	void write2JsonFile();
+	void writeAlignmentResults2JsonFile();
 	virtual ~HHR2Json();
-
 
 private:
 	vector<HHRResult> HHRResultVector;
+
 };
 
 #endif /* HHR2JSON_H_ */

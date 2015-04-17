@@ -7,18 +7,26 @@
 
 #include "HHR2Json.h"
 
+
 HHR2Json::HHR2Json(char* inFilename, char* outFilename) :
 		ConvertTools(inFilename, outFilename) {
+
 }
 
 void HHR2Json::convert() {
 
 	char line[500];
 	int counter = 0;
-	FILE* inputFile = fopen(inputFilename, "r");
-	//ofstream outputFile(outputJsonFilename);
+	string inFilename(inputFileLocation);
+	inFilename += inputFilename;
+
+	FILE* inputFile = fopen((char*) inFilename.c_str(), "r");
+	if (inputFile == NULL) {
+		cout << "input file: " << inFilename << " can't open" << endl;
+	}
+
 	HHRResult result;
-	//outputFile << "{" << "\n";
+	Utility utility;
 	while (fgets(line, 200, inputFile) != NULL) {
 
 		if (strstr(line, ">") != NULL) {
@@ -135,6 +143,12 @@ void HHR2Json::convert() {
 			result.setTargetSsPred(strTPred);
 
 			counter++;
+			string searchDBFilename(DBInfoLocation);
+			searchDBFilename += proteinName;
+			searchDBFilename += ".db";
+			//cout<<searchDBFilename<<endl;
+			utility.find3DCorrds((char*) searchDBFilename.c_str(),
+					coordsOutputFileLocation, proteinName, target, targetStart);
 			HHRResultVector.push_back(result);
 		}
 	}
@@ -143,8 +157,13 @@ void HHR2Json::convert() {
 
 }
 
-void HHR2Json::write2JsonFile() {
-	ofstream outputFile(outputJsonFilename);
+void HHR2Json::writeAlignmentResults2JsonFile() {
+	string outFilename(outputFileLocation);
+	outFilename += outputJsonFilename;
+	ofstream outputFile(outFilename.c_str());
+	if (outputFile == NULL) {
+		cout << "The output file " << outputFile << " can't open" << endl;
+	}
 	outputFile << "{" << "\n";
 	for (int i = 0; i < HHRResultVector.size(); i++) {
 		outputFile << "\"protein" << i << "\":{\n";
