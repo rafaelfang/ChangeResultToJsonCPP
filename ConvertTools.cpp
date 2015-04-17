@@ -9,9 +9,42 @@
 
 ConvertTools::ConvertTools(char* theInputFilename,
 		char* theOutputJsonFilename) {
-	// TODO Auto-generated constructor stub
+
 	inputFilename = theInputFilename;
 	outputJsonFilename = theOutputJsonFilename;
+	jsonReader();
+	buildDirectory();
+}
+void ConvertTools::buildDirectory() {
+
+	char cmd[500];
+	string outputFileFoldername(outputFileLocation);
+	sprintf(cmd, "mkdir -p %s", (char*) outputFileFoldername.c_str());
+	//cout << cmd << endl;
+	system(cmd);
+
+	string outputCoordsFoldername(coordsOutputFileLocation);
+	sprintf(cmd, "mkdir -p %s", (char*) outputCoordsFoldername.c_str());
+	//cout << cmd << endl;
+	system(cmd);
+}
+void ConvertTools::jsonReader() {
+	Json::Reader reader;
+	Json::Value root;
+
+	//read from file
+	ifstream is;
+	is.open("configdebug.json", ios::binary);
+
+	if (reader.parse(is, root)) {
+		DBInfoLocation = root["DBInfoLocation"].asString();
+		inputFileLocation = root["inputFileLocation"].asString();
+		outputFileLocation = root["outputFileLocation"].asString();
+		coordsOutputFileLocation = root["coordsOutputFileLocation"].asString();
+	}
+
+	is.close();
+
 }
 void ConvertTools::trim(string& s) {
 
@@ -24,6 +57,6 @@ void ConvertTools::trim(string& s) {
 
 }
 ConvertTools::~ConvertTools() {
-	// TODO Auto-generated destructor stub
+// TODO Auto-generated destructor stub
 }
 

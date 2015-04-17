@@ -14,19 +14,30 @@
 #include <iostream>
 #include <fstream>
 #include <string.h>
-
+#include <vector>
+#include "ThreeDimCoordsResult.h"
+#include "json/json.h"
 using namespace std;
 
 class ConvertTools {
 public:
-	ConvertTools(char*,char*);
+	ConvertTools(char*, char*);
 	virtual ~ConvertTools();
 	void trim(string& str);
 	virtual void convert()=0;
-	virtual void write2JsonFile()=0;
+	void buildDirectory();
+	void jsonReader();
+	virtual void writeAlignmentResults2JsonFile()=0;
+
 protected:
+	char* rootName;
 	char* inputFilename;
 	char* outputJsonFilename;
+	string DBInfoLocation;
+	string inputFileLocation;
+	string outputFileLocation;
+	string coordsOutputFileLocation;
+
 };
 
 #endif /* CONVERTTOOLS_H_ */
