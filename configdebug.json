@@ -1,0 +1,7 @@
+{
+	"DBInfoLocation":"/home/lihongb/DATABASE/DBInfo/",
+	"inputFileLocation":"/home/cf797/test/ChangeResultToJsonCPP/queryFolder/",
+	"outputFileLocation":"/home/cf797/test/ChangeResultToJsonCPP/outputJsonFolder/",
+	"coordsOutputFileLocation":"/home/cf797/test/ChangeResultToJsonCPP/coordsOutputFolder/"
+  
+}
