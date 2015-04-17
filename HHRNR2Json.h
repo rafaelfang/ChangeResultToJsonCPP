@@ -15,7 +15,7 @@ class HHRNR2Json: public ConvertTools {
 public:
 	HHRNR2Json(char*, char*);
 	void convert();
-	void write2JsonFile();
+	void writeAlignmentResults2JsonFile();
 	virtual ~HHRNR2Json();
 
 

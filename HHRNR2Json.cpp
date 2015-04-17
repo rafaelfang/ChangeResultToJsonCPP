@@ -15,7 +15,12 @@ HHRNR2Json::HHRNR2Json(char* inFilename, char* outFilename) :
 void HHRNR2Json::convert() {
 	char line[500];
 	int counter = 0;
-	FILE* inputFile = fopen(inputFilename, "r");
+	string inFilename(inputFileLocation);
+	inFilename += inputFilename;
+	FILE* inputFile = fopen((char*) inFilename.c_str(), "r");
+	if (inputFile == NULL) {
+		cout << "input file: " << inFilename << " can't open" << endl;
+	}
 
 	HHRNRResult result;
 
@@ -144,15 +149,16 @@ void HHRNR2Json::convert() {
 			HHRNRResultVector.push_back(result);
 		}
 	}
-	//outputFile << "\"finish\":\"end\"" << "\n";
-	//outputFile << "}" << "\n";
+
 	fclose(inputFile);
-	//outputFile.close();
+
 
 }
 
-void HHRNR2Json::write2JsonFile() {
-	ofstream outputFile(outputJsonFilename);
+void HHRNR2Json::writeAlignmentResults2JsonFile() {
+	string outFilename(outputFileLocation);
+	outFilename += outputJsonFilename;
+	ofstream outputFile(outFilename.c_str());
 	outputFile << "{" << "\n";
 	for (int i = 0; i < HHRNRResultVector.size(); i++) {
 		outputFile << "\"protein" << i << "\":{\n";
