@@ -25,23 +25,24 @@ void Utility::find3DCorrds(char* fileName,string output3DFileLocation, string ro
 			sscanf(line, "%s", proteinSeq);
 			string s(proteinSeq);
 			seqLength = s.size();
+			//cout<<seqLength<<endl;
 			continue;
 		}
 		if (strstr(line, ">Ca XYZ:") != NULL) {
-			XCoords.resize(seqLength);
-			YCoords.resize(seqLength);
-			ZCoords.resize(seqLength);
+			XCoords.resize(seqLength+1);
+			YCoords.resize(seqLength+1);
+			ZCoords.resize(seqLength+1);
 
 			float temp;
-			for (int i = 0; i < seqLength; i++) {
+			for (int i = 1; i <= seqLength; i++) {
 				fscanf(fptr, "%f", &temp);
 				XCoords[i] = temp;
 			}
-			for (int i = 0; i < seqLength; i++) {
+			for (int i = 1; i <= seqLength; i++) {
 				fscanf(fptr, "%f", &temp);
 				YCoords[i] = temp;
 			}
-			for (int i = 0; i < seqLength; i++) {
+			for (int i = 1; i <= seqLength; i++) {
 				fscanf(fptr, "%f", &temp);
 				ZCoords[i] = temp;
 			}
@@ -72,8 +73,8 @@ void Utility::write2Json(string protein3DCorrdsFilename, string proteinName,
 			outJsonFile << "\"" << subject[i] << "\":\""
 					<< "10000,10000,10000\n";
 		} else {
-			outJsonFile << "\"" << subject[i] << "\":\"" << XCoords[i] << ","
-					<< YCoords[i] << "," << ZCoords[i] << "\"\n";
+			outJsonFile << "\"" << subject[i] << "\":\"" << XCoords[subjectStart+i] << ","
+					<< YCoords[subjectStart+i] << "," << ZCoords[subjectStart+i] << "\"\n";
 		}
 
 	}
